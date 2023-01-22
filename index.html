@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="main-header">
-      <a href="https://htmlacademy.ru/"><img src="" class="img-logo"></a>
+      <a href="https://htmlacademy.ru/"><img src="img/logo.svg" class="img-logo" alt="логотип компании"></a>
       <nav class="main-navigation">
       <a href="index.html">Главная</a>
       <a href="info.html">О Седоне</a>
@@ -18,8 +18,14 @@
     </header>
     <main>
       <section class="hero">
-        <article class="welcome"></article>
-        <article class="divider"></article>
+        <article class="welcome">
+          <img src="img/welcome.svg">
+          <img src="img/sedona.png">
+        </article>
+        <article class="divider">
+          <h1 class="h1-main">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="p-main">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </article>
       </section>
       <section class="frame">
 
@@ -31,6 +37,13 @@
 
       </section>
     </main>
-    <footer class="main-footer"></footer>
+    <footer class="main-footer">
+      <h1 class="h1-main">Подпишитесь на рассылку</h1>
+      <p class="p-main">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form method="post" class="form-subscribe">
+        <input type="email" placeholder="Ваш e-mail">
+        <input type="submit" value="ПОДПИСАТЬСЯ">
+      </form>
+    </footer>
   </body>
 </html>
