@@ -20,12 +20,64 @@
 
     <main>
 
-      <section class="subscribe">
-        <h1 class="h1-main">Подпишитесь на рассылку</h1>
-        <p class="p-main">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="filter">
+        <h1 class="h1-catalog">Гостиницы Седоны</h1>
+        <div class="filter-search">
+          <img src="img/house-mini.svg">
+          <img src="img/angle.svg">
+          <span>Гостиницы</span>
+        </div>
         <form method="post" class="form-subscribe">
-          <input type="email" placeholder="Ваш e-mail">
-          <input type="submit" value="ПОДПИСАТЬСЯ">
+          <div class="infrastructure">
+            <h2 class="h2-filter">Инфраструктура</h2>
+            <label>
+              <input type="checkbox" name="swimming-pool" checked>
+              Бассейн
+            </label>
+            <label>
+              <input type="checkbox" name="parking" checked>
+              Парковка
+            </label>
+            <label>
+              <input type="checkbox" name="wifi">
+              Wi-Fi
+            </label>
+          </div>
+
+          <div class="type-of-house">
+            <h2 class="h2-filter">Тип Жилья:</h2>
+            <label>
+              <input type="radio" name="type-of-house" value="hotel">
+              Гостиница
+            </label>
+            <label>
+              <input type="radio" name="type-of-house" value="motel">
+              Мотель
+            </label>
+            <label>
+              <input type="radio" name="type-of-house" value="apartments">
+              Апартаменты
+            </label>
+          </div>
+
+          <div class="price">
+            <h2 class="h2-filter">Стоимость, <span>₽</span>:</h2>
+            <label>
+              <input type="text" name="price" value="0">
+              <span>от</span>
+            </label>
+            <label>
+              <input type="text" name="price" value="9000">
+              <span>до</span>
+            </label>
+            <div class="price-range">
+            </div>
+          </div>
+
+          <div class="buttons">
+            <button class="form-button-apply">ПРИМЕНИТЬ</button>
+            <button class="form-button-reset">СБРОСИТЬ</button>
+          </div>
         </form>
       </section>
 
