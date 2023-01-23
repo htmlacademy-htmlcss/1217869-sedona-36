@@ -110,5 +110,31 @@
       <img src="img/academy-logo.svg">
     </footer>
 
+    <div class="modal">
+      <img src="img/close.png" class="close-modal" alt="Закрыть">
+      <h1 class="h1-modal">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h1>
+      <form method="post" class="form-model">
+        <label>
+          Дата Заезда:
+          <input type="date" name="date-in">
+        </label>
+        <span class="date-in-info">Мы не можем отправить вас в прошлое</span>
+        <label>
+          Дата Выезда:
+          <input type="date" name="date-in">
+        </label>
+        <span class="date-in-info">На эти даты есть свободные номера. Пока есть.</span>
+        <label>
+          Взрослые:
+          <button class="modal-add">-</button><input type="text" name="date-in"><button class="modal-add">+</button>
+        </label>
+        <label>
+          Дети: <button class="kid-info">i</button>
+          <button class="modal-add">-</button><input type="text" name="date-in"><button class="modal-add">+</button>
+        </label>
+        <input type="submit" value="НАЙТИ" class="modal-find">
+      </form>
+    </div>
+
   </body>
 </html>
