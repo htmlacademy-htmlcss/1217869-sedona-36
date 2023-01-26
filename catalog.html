@@ -26,18 +26,18 @@
       <button class="enter">ХОЧУ СЮДА!</button>
     </header>
 
-    <main>
+    <main class="main-inner">
 
-      <section class="filter">
-        <h1 class="h1-catalog">Гостиницы Седоны</h1>
+      <section class="filter" data-test="filter">
+        <h1 class="filter-h1">Гостиницы Седоны</h1>
         <div class="filter-search">
           <img src="img/house-mini.svg" alt="иконка домой">
           <img src="img/angle.svg" alt="">
           <span>Гостиницы</span>
         </div>
-        <form method="post" class="form-subscribe">
+        <form method="post" class="subscribe-form">
           <div class="infrastructure">
-            <h2 class="h2-filter">Инфраструктура</h2>
+            <h2 class="filter-h2">Инфраструктура</h2>
             <label>
               <input type="checkbox" name="swimming-pool" checked>
               Бассейн
@@ -53,7 +53,7 @@
           </div>
 
           <div class="type-of-house">
-            <h2 class="h2-filter">Тип Жилья:</h2>
+            <h2 class="filter-h2">Тип Жилья:</h2>
             <label>
               <input type="radio" name="type-of-house" value="hotel">
               Гостиница
@@ -69,7 +69,7 @@
           </div>
 
           <div class="price">
-            <h2 class="h2-filter">Стоимость, <span>₽</span>:</h2>
+            <h2 class="filter-h2">Стоимость, <span>₽</span>:</h2>
             <label>
               <input type="text" name="price" value="0">
               <span>от</span>
@@ -82,17 +82,17 @@
             </div>
           </div>
 
-          <div class="buttons">
+          <div class="filter-buttons">
             <button class="form-button-apply">ПРИМЕНИТЬ</button>
             <button class="form-button-reset">СБРОСИТЬ</button>
           </div>
         </form>
       </section>
 
-      <section class="catalog">
+      <section class="catalog" data-test="catalog">
         <div class="card-hotel">
           <img src="img/hotel-amara.png" alt="отель Амара">
-          <h2 class="h2-card-hotel">Amara Resort & Spa</h2>
+          <h2 class="card-hotel-h2">Amara Resort & Spa</h2>
           <span>Гостиница</span><span>От 4000 ₽</span>
           <a class="hotel-button-more">Подробнее</a>
           <button class="hotel-button-favorites">В ИЗБРАННОМ</button>
@@ -107,7 +107,7 @@
 
         <div class="card-hotel">
           <img src="img/hotel-diablo.jpg" alt="отель Даибло">
-          <h2 class="h2-card-hotel">Villas at Poco Diablo</h2>
+          <h2 class="card-hotel-h2">Villas at Poco Diablo</h2>
           <span>Гостиница</span><span>От 5000 ₽</span>
           <a class="hotel-button-more">Подробнее</a>
           <button class="hotel-button-favorites">В ИЗБРАННОМ</button>
@@ -122,7 +122,7 @@
 
         <div class="card-hotel">
           <img src="img/hotel-desert.jpg" alt="отель пустыня">
-          <h2 class="h2-card-hotel">Desert Quail Inn</h2>
+          <h2 class="card-hotel-h2">Desert Quail Inn</h2>
           <span>Гостиница</span><span>От 2500 ₽</span>
           <a class="hotel-button-more">Подробнее</a>
           <button class="hotel-button-favorites">В ИЗБРАННОМ</button>
@@ -136,7 +136,7 @@
 
         <div class="card-hotel">
           <img src="img/hotel-greentree.jpg" alt="отель зеленое дерево">
-          <h2 class="h2-card-hotel">GreenTree Inn</h2>
+          <h2 class="card-hotel-h2">GreenTree Inn</h2>
           <span>Гостиница</span><span>От 1500 ₽</span>
           <a class="hotel-button-more">Подробнее</a>
           <button class="hotel-button-favorites">В ИЗБРАННОМ</button>
@@ -147,31 +147,41 @@
           <button class="hotel-rating-all">РЕЙТИНГ: 5,0</button>
         </div>
 
-        <div class="catalog-pagination">
-          <button class="pagination-button">1</button>
-          <button class="pagination-button">2</button>
-          <button class="pagination-button">3</button>
-          <button class="pagination-button">4</button>
-          <button class="pagination-button">...</button>
-          <button class="pagination-button">10</button>
-        </div>
-
-
+        <ul class="catalog-pagination-list">
+          <li class="catalog-pagination-item">
+            <a href="#">1</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a href="#">2</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a href="#">3</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a href="#">4</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a href="#">...</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a href="#">10</a>
+          </li>
+        </ul>
       </section>
 
 
-      <section class="subscribe">
-        <h1 class="h1-main">Подпишитесь на рассылку</h1>
-        <p class="p-main">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form method="post" class="form-subscribe">
-          <input type="email" placeholder="Ваш e-mail">
-          <input type="submit" value="ПОДПИСАТЬСЯ">
+      <section class="subscribe" data-test="subscribe">
+        <h1 class="subscribe-h1">Подпишитесь на рассылку</h1>
+        <p class="subscribe-p">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form method="post" class="subscribe-form">
+          <input type="email" placeholder="Ваш e-mail" name="subscribe-email" class="subscribe-email">
+          <input type="submit" value="ПОДПИСАТЬСЯ" class="subscribe-submit">
         </form>
       </section>
 
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <section class="footer-social">
         <a href="https://vk.com/htmlacademy"><img src="img/vk.svg" alt="перейти в ВК"></a>
         <a href="https://t.me/htmlacademy "><img src="img/telegram.svg" alt="перейти в Телеграм"></a>
