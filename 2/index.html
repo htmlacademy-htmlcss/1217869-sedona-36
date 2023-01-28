@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <base href="https://htmlacademy-htmlcss.github.io/1217869-sedona-36/2/">
+</head>
+  <body>
+
+    <header class="page-header" data-test="header">
+      <a href="https://htmlacademy.ru/"><img src="img/logo.svg" class="img-logo" alt="логотип компании"></a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="search"></button>
+      <button class="like"></button>
+      <button class="enter">ХОЧУ СЮДА!</button>
+    </header>
+
+    <main data-test="main">
+      <section class="hero" data-test="hero">
+        <article class="welcome">
+          <img src="img/welcome.svg" alt="welcome">
+          <img src="img/sedona.png" alt="Седона">
+        </article>
+        <article class="divider">
+          <h1 class="h1-main">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="p-main">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </article>
+      </section>
+      <section class="frame">
+        <div class="card">
+          <h2 class="h2-card">Настоящий городок</h2>
+          <span class="rectangle"></span>
+          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
+        <div class="card">
+        </div>
+        <div class="card">
+          <h2 class="h2-card">Небольшая площадь</h2>
+          <span class="rectangle"></span>
+          <p>Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="card">
+          <h2 class="h2-card">Красивая дорога</h2>цитировать
+          <span class="rectangle"></span>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="card">
+          <h2 class="h2-card">Мало туристов</h2>
+          <span class="rectangle"></span>
+          <p>Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
+        <div class="card">
+        </div>
+        <div class="card">
+          <h2 class="h2-card">Там есть мост дьявола</h2>
+          <span class="rectangle"></span>
+          <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        </div>
+      </section>
+
+      <article class="divider">
+        <h1 class="h1-main">Приезжайте в Седону отдохнуть в комфорте и уюте!</h1>
+        <p class="p-main">Опытный персонал и качественное обслуживание!</p>
+      </article>
+
+      <section class="benefits" data-test="advantages">
+        <div class="card">
+          <img src="img/house.svg" alt="иконка дома">
+          <h2 class="h2-card">Жильё</h2>
+          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        </div>
+        <div class="card">
+          <img src="img/food.svg" alt="иконка еды">
+          <h2 class="h2-card">Еда</h2>
+          <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+        <div class="card">
+          <img src="img/gift.svg" alt="иконка подарка">
+          <h2 class="h2-card">Сувениры</h2>
+          <p>Не только китайского, но и настоящего местного производства!</p>
+        </div>
+      </section>
+
+      <section class="search-hotel" data-test="search">
+        <h1 class="h1-main">Заинтересовались?</h1>
+        <p class="p-main">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a href="catalog.html" class="a-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+      </section>
+
+      <section class="subscribe" data-test="subscribe">
+        <h1 class="subscribe-h1">Подпишитесь на рассылку</h1>
+        <p class="subscribe-p">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form method="post" class="subscribe-form">
+          <input type="email" placeholder="Ваш e-mail" name="subscribe-email" class="subscribe-email">
+          <input type="submit" value="ПОДПИСАТЬСЯ" class="subscribe-submit">
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer" data-test="footer">
+      <section class="footer-social">
+        <a href="https://vk.com/htmlacademy"><img src="img/vk.svg" alt="перейти в ВК"></a>
+        <a href="https://t.me/htmlacademy "><img src="img/telegram.svg" alt="перейти в Телеграм"></a>
+        <a href="https://www.youtube.com/user/htmlacademyru"><img src="img/youtube.svg" alt="перейти на Youtube"></a>
+      </section>
+      <address>+7 (812) 812-12-12</address>
+      <img src="img/academy-logo.svg" alt="логотип HTML академии">
+    </footer>
+
+    <div class="modal">
+      <img src="img/close.png" class="close-modal" alt="Закрыть">
+      <h1 class="h1-modal">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h1>
+      <form method="post" class="form-model">
+        <label>
+          Дата Заезда:
+          <input type="date" name="date-in">
+        </label>
+        <span class="date-in-info">Мы не можем отправить вас в прошлое</span>
+        <label>
+          Дата Выезда:
+          <input type="date" name="date-in">
+        </label>
+        <span class="date-in-info">На эти даты есть свободные номера. Пока есть.</span>
+        <label>
+          Взрослые:
+          <button class="modal-add">-</button><input type="text" name="date-in"><button class="modal-add">+</button>
+        </label>
+        <label>
+          Дети: <button class="kid-info">i</button>
+          <button class="modal-add">-</button><input type="text" name="date-in"><button class="modal-add">+</button>
+        </label>
+        <div class="kid-info-block">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+        <input type="submit" value="НАЙТИ" class="modal-find">
+      </form>
+    </div>
+
+  </body>
+</html>
