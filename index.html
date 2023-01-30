@@ -7,8 +7,8 @@
   <body>
 
     <header class="page-header" data-test="header">
-      <h1 class="hidden">Главная страница Седоны</h1>
-      <a href="https://htmlacademy.ru/"><img src="img/logo.svg" class="img-logo" alt="логотип компании"></a>
+      <h1 class="visually-hidden">Главная страница Седоны</h1>
+      <a href="https://htmlacademy.ru/"><img src="images/logo.svg" width="140" height="70" class="img-logo" alt="логотип компании"></a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -30,12 +30,11 @@
     <main data-test="main">
       <section class="hero" data-test="hero">
         <article class="welcome">
-          <img src="img/welcome.svg" alt="welcome">
-          <img src="img/sedona.png" alt="Седона">
+          <img src="images/welcome.svg" width="458" height="352" alt="welcome">
         </article>
         <article class="divider">
-          <p class="p-main">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="p-main">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <p class="main-p">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="main-p">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </article>
       </section>
       <section class="frame">
@@ -45,6 +44,7 @@
           <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
         <div class="card">
+          <img src="images/photo-1.jpg" width="800" height="384" alt="фотография городка">
         </div>
         <div class="card">
           <h2 class="card-h2">Небольшая площадь</h2>
@@ -62,6 +62,7 @@
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </div>
         <div class="card">
+          <img src="images/photo-2.jpg" width="800" height="385" alt="фотография каньона">
         </div>
         <div class="card">
           <h2 class="card-h2">Там есть мост дьявола</h2>
@@ -70,27 +71,29 @@
         </div>
       </section>
 
+      <section class="benefits" data-test="advantages">
       <article class="divider">
-        <p class="p-main">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-        <p class="p-main">Опытный персонал и качественное обслуживание!</p>
+        <p class="main-p">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+        <p class="main-p">Опытный персонал и качественное обслуживание!</p>
       </article>
 
-      <section class="benefits" data-test="advantages">
+      <article class="cards">
         <div class="card">
-          <img src="img/house.svg" alt="иконка дома">
+          <img src="images/house.svg" width="75" height="72" alt="иконка дома">
           <h2 class="card-h2">Жильё</h2>
           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </div>
         <div class="card">
-          <img src="img/food.svg" alt="иконка еды">
+          <img src="images/food.svg" width="74" height="70"  alt="иконка еды">
           <h2 class="card-h2">Еда</h2>
           <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
         </div>
         <div class="card">
-          <img src="img/gift.svg" alt="иконка подарка">
+          <img src="images/gift.svg" width="64" height="76"  alt="иконка подарка">
           <h2 class="card-h2">Сувениры</h2>
           <p>Не только китайского, но и настоящего местного производства!</p>
         </div>
+      </article>
       </section>
 
       <section class="search-hotel" data-test="search">
@@ -110,17 +113,17 @@
     </main>
 
     <footer class="page-footer" data-test="footer">
-      <section class="footer-social">
-        <a href="https://vk.com/htmlacademy"><img src="img/vk.svg" alt="перейти в ВК"></a>
-        <a href="https://t.me/htmlacademy "><img src="img/telegram.svg" alt="перейти в Телеграм"></a>
-        <a href="https://www.youtube.com/user/htmlacademyru"><img src="img/youtube.svg" alt="перейти на Youtube"></a>
-      </section>
+      <div class="footer-social">
+        <a href="https://vk.com/htmlacademy"><img src="images/vk.svg" alt="перейти в ВК"></a>
+        <a href="https://t.me/htmlacademy "><img src="images/telegram.svg" alt="перейти в Телеграм"></a>
+        <a href="https://www.youtube.com/user/htmlacademyru"><img src="images/youtube.svg" alt="перейти на Youtube"></a>
+      </div>
       <address>+7 (812) 812-12-12</address>
-      <img src="img/academy-logo.svg" alt="логотип HTML академии">
+      <img src="images/academy-logo.svg" alt="логотип HTML академии">
     </footer>
 
     <div class="modal">
-      <img src="img/close.png" class="close-modal" alt="Закрыть">
+      <img src="images/close.png" class="close-modal" alt="Закрыть">
       <h2 class="modal-h2">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
       <form method="post" class="form-model">
         <p class="modal-p">
