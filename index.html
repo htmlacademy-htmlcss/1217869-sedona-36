@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-
+    <h1 class="visually-hidden">Главная страница Седоны</h1>
     <header class="page-header" data-test="header">
-      <h1 class="visually-hidden">Главная страница Седоны</h1>
+
+      <div class="header-left">
       <a href="https://htmlacademy.ru/"><img src="images/logo.svg" width="140" height="70" class="img-logo" alt="логотип компании"></a>
       <nav class="navigation">
         <ul class="navigation-list">
@@ -23,12 +24,15 @@
           </li>
         </ul>
       </nav>
-      <button class="search"></button>
-      <button class="like"></button>
-      <button class="enter">ХОЧУ СЮДА!</button>
+      </div>
+      <div class="header-button">
+        <button class="search"></button>
+        <button class="like"></button>
+        <button class="enter">ХОЧУ СЮДА!</button>
+      </div>
     </header>
 
-    <main data-test="main">
+    <main class="main-page" data-test="main">
       <section class="hero" data-test="hero">
         <article class="welcome">
           <img src="images/welcome.svg" width="458" height="352" alt="welcome">

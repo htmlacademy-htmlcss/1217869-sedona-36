@@ -17,5 +17,97 @@
 }
 
 body {
-  font-family: "PT Sans", serif;
+  font-family: "PT Sans", sans-serif;
+  width: 1200px;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.visually-hidden {
+  visibility: hidden;
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px 70px;
+  gap: 30px;
+
+  position: absolute;
+  height: 64px;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+
+  background: #FFFFFF;
+}
+
+.header-left{
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation{
+  padding-left: 30px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  margin: 0;
+}
+
+.navigation-item{
+  list-style-type: none;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+
+  text-transform: capitalize;
+
+  padding: 20px 16px;
+
+}
+
+.navigation-item a{
+  text-decoration: none;
+  color: #000000;
+}
+
+p{
+  margin: 0;
+}
+
+.enter{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 50px;
+  gap: 10px;
+
+  width: 160px;
+  height: 36px;
+
+  /* Buttons/basic */
+
+  background: #756157;
+  border-radius: 4px;
+}
+
+/*блок main*/
+.main-page{
+
 }
