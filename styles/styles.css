@@ -491,8 +491,15 @@ p{
   margin-bottom: 54px;
 }
 
+.subscribe-form{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: inline-block;
+}
+
 .subscribe-form input[type="email"]{
-  padding: 12px 20px;
+  padding: 14px 20px;
   background: #F2F2F2;
   color: #000000;
   border-radius: 4px 0px 0px 4px;
@@ -507,6 +514,8 @@ p{
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+
+  border:0;
 }
 
 .subscribe-form input[type="submit"]{
@@ -518,6 +527,7 @@ p{
   color: #FFFFFF;
   padding: 8px 50px;
   margin:0;
+  margin-left: -4px;
 
   box-sizing: border-box;
 
@@ -526,4 +536,45 @@ p{
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  border: 0;
+
+  cursor: pointer;
+}
+
+
+.page-footer{
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  background: #FFFFFF;
+  color: #000000;
+
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.page-footer address{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.footer-social{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+  gap: 20px;
+}
+
+.modal{
+  display: none;
 }
