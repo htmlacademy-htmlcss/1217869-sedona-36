@@ -664,7 +664,7 @@ p{
   background-color: #E6E6E6;
   display: block;
   align-self: center;
-  margin: 30px auto;
+  margin: 0;
 }
 
 .hotel-find {
@@ -718,4 +718,49 @@ p{
 
 .card-hotel img {
   width: 100%;
+}
+
+.catalog-pagination-list {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  justify-content: start;
+  gap: 8px;
+  margin: 0;
+}
+
+.catalog-pagination-item {
+  list-style-type: none;
+}
+
+.catalog-pagination-item a {
+  background: #82B3D3;
+  border-radius: 4px;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.catalog-pagination-item:nth-child(1) a{
+  background: #F2F2F2;
+  color: #000000;
+}
+
+.catalog-pagination-item:nth-child(5) a{
+  background: #ffffff;
+  color: #000000;
 }
