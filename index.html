@@ -2,11 +2,159 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <h1 class="visually-hidden">Главная страница Седоны</h1>
+    <header class="page-header" data-test="header">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+      <div class="header-left">
+      <a href="https://htmlacademy.ru/"><img src="images/logo.svg" width="140" height="70" class="img-logo" alt="логотип компании"></a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+      <div class="header-button">
+        <button class="search"></button>
+        <button class="like"></button>
+        <button class="enter">ХОЧУ СЮДА!</button>
+      </div>
+    </header>
+
+    <main class="main-page" data-test="main">
+      <section class="hero" data-test="hero">
+        <article class="welcome">
+          <img src="images/welcome.svg" width="458" height="352" alt="welcome">
+          <img src="images/decor-white.svg" width="1200" height="57" alt="welcome">
+        </article>
+        <article class="divider">
+          <p class="main-p">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+          <p class="main-p">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </article>
+      </section>
+      <section class="frame">
+        <div class="card">
+          <h2 class="card-h2">Настоящий городок</h2>
+          <span class="rectangle"></span>
+          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
+        <div class="card">
+          <img src="images/photo-1.jpg" width="800" height="384" alt="фотография городка">
+        </div>
+        <div class="card">
+          <h2 class="card-h2">Небольшая<br>площадь</h2>
+          <span class="rectangle"></span>
+          <p>Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="card">
+          <h2 class="card-h2">Красивая<br>дорога</h2>
+          <span class="rectangle"></span>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="card">
+          <h2 class="card-h2">Мало<br>туристов</h2>
+          <span class="rectangle"></span>
+          <p>Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
+        <div class="card">
+          <img src="images/photo-2.jpg" width="800" height="385" alt="фотография каньона">
+        </div>
+        <div class="card">
+          <h2 class="card-h2">Там есть<br>мост дьявола</h2>
+          <span class="rectangle"></span>
+          <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        </div>
+      </section>
+
+      <section class="benefits" data-test="advantages">
+      <article class="divider">
+        <p class="main-p">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</p>
+        <p class="main-p">Опытный персонал и качественное обслуживание!</p>
+      </article>
+
+      <article class="cards">
+        <div class="card">
+          <img src="images/house.svg" width="75" height="72" alt="иконка дома">
+          <h2 class="card-h2">Жильё</h2>
+          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        </div>
+        <div class="card">
+          <img src="images/food.svg" width="74" height="70"  alt="иконка еды">
+          <h2 class="card-h2">Еда</h2>
+          <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+        <div class="card">
+          <img src="images/gift.svg" width="64" height="76"  alt="иконка подарка">
+          <h2 class="card-h2">Сувениры</h2>
+          <p>Не только китайского, но и настоящего местного производства!</p>
+        </div>
+      </article>
+      </section>
+
+      <section class="search-hotel" data-test="search">
+        <h2 class="search-hotel-h2">Заинтересовались?</h2>
+        <p class="search-hotel-p">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a href="catalog.html" class="a-button"><span>ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</span></a>
+      </section>
+
+      <section class="subscribe" data-test="subscribe">
+        <h2 class="subscribe-h2">Подпишитесь на рассылку</h2>
+        <p class="subscribe-p">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        <form method="post" class="subscribe-form">
+          <input type="email" placeholder="Ваш e-mail" name="subscribe-email" class="subscribe-email">
+          <input type="submit" value="ПОДПИСАТЬСЯ" class="subscribe-submit">
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer" data-test="footer">
+      <div class="footer-social">
+        <a href="https://vk.com/htmlacademy"><img src="images/vk.svg" alt="перейти в ВК"></a>
+        <a href="https://t.me/htmlacademy "><img src="images/telegram.svg" alt="перейти в Телеграм"></a>
+        <a href="https://www.youtube.com/user/htmlacademyru"><img src="images/youtube.svg" alt="перейти на Youtube"></a>
+      </div>
+      <address>+7 (812) 812-12-12</address>
+      <img src="images/academy-logo.svg" alt="логотип HTML академии">
+    </footer>
+
+    <div class="modal">
+      <img src="images/close.png" class="close-modal" alt="Закрыть">
+      <h2 class="modal-h2">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+      <form method="post" class="form-model">
+        <p class="modal-p">
+          Дата Заезда:
+          <input type="date" name="date-in">
+        </p>
+        <span class="date-in-info">Мы не можем отправить вас в прошлое</span>
+        <p class="modal-p">
+          Дата Выезда:
+          <input type="date" name="date-in">
+        </p>
+        <span class="date-in-info">На эти даты есть свободные номера. Пока есть.</span>
+        <p class="modal-p">
+          Взрослые:
+          <button class="modal-add">-</button><input type="text" name="date-in"><button class="modal-add">+</button>
+        </p>
+        <p class="modal-p">
+          Дети: <button class="kid-info">i</button>
+          <button class="modal-add">-</button><input type="text" name="date-in"><button class="modal-add">+</button>
+        </p>
+        <div class="kid-info-block">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+        <input type="submit" value="НАЙТИ" class="modal-find">
+      </form>
+    </div>
 
   </body>
 </html>
