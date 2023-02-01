@@ -408,6 +408,7 @@ p{
   background: #FFFFFF;
   text-align: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .search-hotel-h2{
@@ -454,4 +455,75 @@ p{
   font-size: 20px;
   line-height: 36px;
   color: #FFFFFF;
+}
+
+.subscribe{
+  background-color: #000000;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  padding-top: 96px;
+  padding-bottom: 104px;
+}
+.subscribe-h2{
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.subscribe-p{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+
+  margin: 0;
+  margin-bottom: 54px;
+}
+
+.subscribe-form input[type="email"]{
+  padding: 12px 20px;
+  background: #F2F2F2;
+  color: #000000;
+  border-radius: 4px 0px 0px 4px;
+  width: 452px;
+  height: 52px;
+  margin: 0;
+
+  box-sizing: border-box;
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.subscribe-form input[type="submit"]{
+  background: #82B3D3;
+  border-radius: 0px 4px 4px 0px;
+  width: 232px;
+  height: 52px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 8px 50px;
+  margin:0;
+
+  box-sizing: border-box;
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
