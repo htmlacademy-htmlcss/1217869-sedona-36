@@ -151,7 +151,8 @@ p{
 
 .hero .divider{
   height: 261px;
-  padding-top: 69px;
+  padding: 69px 0;
+  box-sizing: border-box;
 }
 
 .hero .divider p:nth-child(1){
@@ -164,7 +165,6 @@ p{
   text-transform: uppercase;
 
   color: #000000;
-  margin-bottom: 25px;
 }
 
 .hero .divider p:nth-child(2){
@@ -347,4 +347,111 @@ p{
 
   text-align: center;
   text-transform: uppercase;
+}
+
+
+.benefits .divider{
+  height: 246px;
+  padding: 64px 0;
+  box-sizing: border-box;
+}
+
+.benefits .divider p:nth-child(1){
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+.benefits .divider p:nth-child(2){
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+
+  text-align: center;
+
+  color: #333333;
+}
+
+.cards{
+  display: flex;
+  flex-direction: row;
+}
+
+.cards .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0px 85px;
+  gap: 30px;
+  height: 385px;
+}
+
+.cards .card:nth-child(2n-1){
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.search-hotel{
+  display: flex;
+  flex-direction: column;
+  padding: 96px 304px;
+  height: 406px;
+  background: #FFFFFF;
+  text-align: center;
+  align-items: center;
+}
+
+.search-hotel-h2{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.search-hotel-p{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.a-button{
+  width: 376px;
+  height: 52px;
+  margin-top: 62px;
+  background: #756157;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  text-decoration: none;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.a-button span{
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
 }
