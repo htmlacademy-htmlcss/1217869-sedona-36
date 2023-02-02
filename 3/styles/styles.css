@@ -459,6 +459,7 @@ p{
 
 .subscribe{
   background-color: #000000;
+  background-image: url("../images/subscribe.png");
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -586,6 +587,8 @@ p{
 
 .filter{
   background-color: #000000;
+  background-image: url("../images/filter.png");
+  background-size: 102%;
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -637,6 +640,10 @@ p{
   color: #FFFFFF;
 }
 
+.infrastructure label:last-child {
+  margin-bottom: 0;
+}
+
 .type-of-house label {
   display: inline-block;
   margin-bottom: 16px;
@@ -648,6 +655,10 @@ p{
   line-height: 23px;
 
   color: #FFFFFF;
+}
+
+.type-of-house label:last-child {
+  margin-bottom: 0;
 }
 
 .catalog {
