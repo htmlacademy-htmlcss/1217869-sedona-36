@@ -665,7 +665,26 @@ p{
   display: none;
 }
 
+
+
+
+
+
+
+
+
+
 /*catalog*/
+
+
+
+
+
+
+
+
+
+
 .main-inner{
   margin-top: 64px;
 }
@@ -771,6 +790,31 @@ p{
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.catalog-filter-select {
+  width: 292px;
+  height: 49px;
+  padding: 14px 20px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #333333;
+}
+
+.catalog-filter-icons {
+  width: 48px;
+  height: 48px;
+
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  background-color: #ffffff;
 }
 
 .catalog-filter {
