@@ -16,6 +16,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
   width: 1200px;
@@ -23,6 +27,7 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  min-height: 100%;
 
   background-color: #FFFFFF;
   color: #000000;
@@ -187,6 +192,7 @@ p{
 /*блок main*/
 .main-page{
   margin-top: 64px;
+  flex-grow: 1;
 }
 
 .hero{
@@ -687,6 +693,7 @@ p{
 
 .main-inner{
   margin-top: 64px;
+  flex-grow: 1;
 }
 
 .filter{
