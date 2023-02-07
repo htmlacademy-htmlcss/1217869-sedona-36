@@ -136,25 +136,52 @@ p{
   margin: 0;
 }
 
-.enter{
+.button{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 8px 50px;
-  gap: 10px;
 
   font-family: "PT Sans";
   font-size: 16px;
+  font-weight: 700;
   line-height: 20px;
   white-space: nowrap;
+  color: #FFFFFF;
+  text-decoration: none;
 
   width: 160px;
   height: 36px;
+  box-sizing: border-box;
 
-  background: #756157;
-  color: #FFFFFF;
+  background: #000000;
   border-radius: 4px;
+
+  text-transform: uppercase;
+
+  border: none;
+}
+
+.brown-button {
+  background: #756157;
+}
+
+.hotel-button-favorites {
+  background: #756157;
+  width: 140px;
+}
+
+.hotel-button-more {
+  background: #82B3D3;
+  width: 140px;
+}
+
+.hotel-rating-all {
+  background: #F2F2F2;
+  color: #333333;
+  font-weight: 400;
+  width: 140px;
 }
 
 /*блок main*/
@@ -765,7 +792,7 @@ p{
 .card-hotel {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  gap: 16px;
   padding: 20px;
 
   width: 340px;
@@ -783,11 +810,51 @@ p{
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  margin: 0;
 }
 
 .card-hotel img {
   width: 100%;
 }
+
+.stars {
+  display: flex;
+  flex-direction: row;
+  width: 140px;
+}
+
+.stars img {
+  width: 18px;
+}
+
+.hotel-rating {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hotel-price {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #333333;
+}
+
+.hotel-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  gap:20px;
+}
+
 
 .catalog-pagination-list {
   display: flex;
