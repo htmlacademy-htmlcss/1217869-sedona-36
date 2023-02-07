@@ -172,7 +172,6 @@ p{
 }
 
 .welcome{
-  height: 485px;
   width: 1200px;
   text-align: center;
   padding-top: 50px;
@@ -180,9 +179,16 @@ p{
   background-repeat: no-repeat;
   box-sizing: border-box;
 }
-.welcome img:last-child{
-  margin-top: 23px;
+.welcome img:first-child{
+  margin-bottom: 23px;
   box-sizing: border-box;
+}
+
+.decor {
+  background-image: url("../images/decor-white.svg");
+  height: 57px;
+  width: 100%;
+  top: 485px;
 }
 
 .hero .divider{
