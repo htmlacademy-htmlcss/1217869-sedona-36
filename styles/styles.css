@@ -44,24 +44,16 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 0 70px;
   gap: 30px;
 
   position: absolute;
   height: 64px;
   width: 1200px;
-  left: 0;
-  right: 0;
   top: 0;
-  margin: 0 auto;
-
-  background: #FFFFFF;
 }
 
 .header-left{
   display: flex;
-  flex-direction: row;
   margin-left: 70px;
 }
 
@@ -81,12 +73,9 @@ body {
 
 .navigation-item{
   list-style-type: none;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  /* identical to box height, or 120% */
 
   text-transform: capitalize;
 
@@ -148,7 +137,6 @@ p{
   align-items: center;
   padding: 8px 50px;
 
-  font-family: "PT Sans";
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -224,34 +212,29 @@ p{
   top: 485px;
 }
 
-.hero .divider{
-  height: 261px;
+.divider{
   padding: 69px 0;
   box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
 }
 
-.hero .divider p:nth-child(1){
-  font-family: 'PT Sans';
-  font-style: normal;
+.divider-h{
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 25px;
-
-  color: #000000;
 }
 
-.hero .divider p:nth-child(2){
-  font-family: 'PT Sans';
-  font-style: normal;
+.divider-p{
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-
   text-align: center;
-
   color: #333333;
 }
 
@@ -262,6 +245,8 @@ p{
   box-sizing: border-box;
 }
 
+
+
 .frame div:nth-child(1){
   background-color: #82B3D3;
   color: #FFFFFF;
@@ -270,8 +255,6 @@ p{
   padding: 102px 85px;
   box-sizing: border-box;
 
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -281,8 +264,6 @@ p{
   color: #ffffff;
   text-align: center;
 
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -305,8 +286,6 @@ p{
   padding: 102px 85px;
   box-sizing: border-box;
 
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -328,8 +307,6 @@ p{
   padding: 102px 85px;
   box-sizing: border-box;
 
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -350,9 +327,6 @@ p{
   align-self: center;
   padding: 102px 85px;
   box-sizing: border-box;
-
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -380,8 +354,6 @@ p{
   padding: 102px 85px;
   box-sizing: border-box;
 
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -405,17 +377,14 @@ p{
   margin: 30px auto;
 }
 
-.card p{
-  font-family: 'PT Sans';
-  font-style: normal;
+.card-p{
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  text-align: center;
 }
 
-.card-h2{
-  font-family: 'PT Sans';
-  font-style: normal;
+.card-h{
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -423,37 +392,6 @@ p{
 
   text-align: center;
   text-transform: uppercase;
-}
-
-
-.benefits .divider{
-  height: 246px;
-  padding: 64px 0;
-  box-sizing: border-box;
-}
-
-.benefits .divider p:nth-child(1){
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-
-  color: #000000;
-}
-
-.benefits .divider p:nth-child(2){
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-
-  text-align: center;
-
-  color: #333333;
 }
 
 .cards{
@@ -466,7 +404,6 @@ p{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
   padding: 0 85px;
   gap: 30px;
   height: 385px;
@@ -476,64 +413,16 @@ p{
   background: rgba(131, 179, 211, 0.12);
 }
 
-.search-hotel{
-  display: flex;
-  flex-direction: column;
-  padding: 96px 304px;
-  height: 406px;
-  background: #FFFFFF;
-  text-align: center;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.search-hotel-h2{
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
-  color: #000000;
-}
-
-.search-hotel-p{
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  color: #333333;
-}
-
 .a-button{
   width: 376px;
   height: 52px;
-  margin-top: 62px;
-  background: #756157;
-  border-radius: 4px;
-  box-sizing: border-box;
-
-  text-decoration: none;
-  color: #FFFFFF;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  text-transform: uppercase;
-}
-
-.a-button span{
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
+  margin-top: 30px;
   font-size: 20px;
   line-height: 36px;
-  color: #FFFFFF;
+  text-decoration: none;
 }
 
-.main-page .subscribe{
+.subscribe{
   background-color: #000000;
   background-image: url("../images/subscribe.png");
   color: #FFFFFF;
@@ -547,7 +436,7 @@ p{
   padding-bottom: 104px;
 }
 
-.main-inner .subscribe {
+.subscribe-white {
   background-color: #ffffff;
   background-image: none;
   color: #000000;
@@ -565,16 +454,12 @@ p{
   margin: 0;
   margin-bottom: 20px;
 
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
 }
 
 .subscribe-p{
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -601,9 +486,6 @@ p{
 
   box-sizing: border-box;
 
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 24px;
 
@@ -617,14 +499,12 @@ p{
   height: 52px;
   text-align: center;
   color: #FFFFFF;
-  padding: 8px 50px;
+  padding: 8px 0;
   margin:0;
   margin-left: -4px;
 
   box-sizing: border-box;
 
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -646,21 +526,13 @@ p{
   justify-content: space-around;
 }
 
-.page-footer address{
-  font-family: 'PT Sans';
+.address{
   font-style: normal;
-  font-weight: 400;
   font-size: 40px;
-  line-height: 40px;
-
-  text-align: center;
-  text-transform: uppercase;
-
 }
 
 .footer-social{
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0 10px;
@@ -710,8 +582,6 @@ p{
 }
 
 .filter-h2{
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -720,7 +590,7 @@ p{
   margin-bottom: 8px;
 }
 
-.filter .subscribe-form{
+.filter-subscribe-form{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -738,37 +608,16 @@ p{
   margin-bottom: 32px;
 }
 
-.infrastructure label {
+.filter-label {
   display: inline-block;
   margin-bottom: 16px;
-
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
 
   color: #FFFFFF;
 }
 
-.infrastructure label:last-child {
-  margin-bottom: 0;
-}
-
-.type-of-house label {
-  display: inline-block;
-  margin-bottom: 16px;
-
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
-
-  color: #FFFFFF;
-}
-
-.type-of-house label:last-child {
+.filter-label:last-child {
   margin-bottom: 0;
 }
 
@@ -780,7 +629,7 @@ p{
   padding: 50px 70px 60px;
 }
 
-.catalog .rectangle {
+.catalog-rectangle {
   width: 1060px;
   height: 2px;
   background-color: #E6E6E6;
@@ -790,13 +639,10 @@ p{
 }
 
 .hotel-find {
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #000000;
 }
 
 .catalog-filter-select {
@@ -805,10 +651,6 @@ p{
   padding: 14px 20px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 
@@ -855,8 +697,6 @@ p{
 }
 
 .card-hotel-h2 {
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -889,9 +729,6 @@ p{
   justify-content: space-between;
   width: 100%;
 
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
 
@@ -909,9 +746,7 @@ p{
 
 .catalog-pagination-list {
   display: flex;
-  flex-direction: row;
   height: 60px;
-  justify-content: start;
   gap: 8px;
   margin: 0;
 }
@@ -920,17 +755,15 @@ p{
   list-style-type: none;
 }
 
-.catalog-pagination-item a {
+.catalog-pagination-item-a{
   background: #82B3D3;
+  color: #FFFFFF;
   border-radius: 4px;
   height: 60px;
   width: 60px;
   display: flex;
   justify-content: center;
 
-
-  font-family: 'PT Sans';
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -938,16 +771,16 @@ p{
   text-align: center;
   text-transform: uppercase;
 
-  color: #FFFFFF;
   text-decoration: none;
 }
 
-.catalog-pagination-item:nth-child(1) a{
+.catalog-pagination-item-select{
   background: #F2F2F2;
   color: #000000;
 }
 
-.catalog-pagination-item:nth-child(5) a{
+.catalog-pagination-item-pass{
   background: #ffffff;
   color: #000000;
+  cursor: default;
 }
