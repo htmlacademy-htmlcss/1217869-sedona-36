@@ -165,6 +165,10 @@ p{
   width: 140px;
 }
 
+.hotel-button-favorites-select {
+  background: #7DB54F;
+}
+
 .hotel-button-more {
   background: #82B3D3;
   width: 140px;
@@ -657,6 +661,8 @@ p{
   display: flex;
   justify-content: space-between;
   width: 100%;
+
+  gap: 20px;
 }
 
 .hotel-price {
