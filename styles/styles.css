@@ -249,7 +249,6 @@ p{
   align-items: center;
   justify-content: center;
   padding: 0 85px;
-  height: 385px;
   box-sizing: border-box;
   font-weight: 700;
   font-size: 24px;
@@ -335,9 +334,8 @@ p{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 85px;
+  padding: 81px 85px;
   gap: 30px;
-  height: 385px;
   width: 400px;
 }
 
@@ -404,7 +402,6 @@ p{
   color: #000000;
   border-radius: 4px 0 0 4px;
   width: 452px;
-  height: 52px;
   margin: 0;
 
   box-sizing: border-box;
@@ -419,7 +416,6 @@ p{
   background: #82B3D3;
   border-radius: 0 4px 4px 0;
   width: 232px;
-  height: 52px;
   text-align: center;
   color: #FFFFFF;
   padding: 8px 0;
@@ -570,7 +566,6 @@ p{
 
 .catalog-filter-select {
   width: 292px;
-  height: 49px;
   padding: 14px 20px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
@@ -669,7 +664,6 @@ p{
 
 .catalog-pagination-list {
   display: flex;
-  height: 60px;
   gap: 8px;
   margin: 0;
 }
