@@ -34,10 +34,16 @@ body {
 }
 
 .visually-hidden {
-  visibility: hidden;
-  height: 0;
-  margin: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
   padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page-header {
@@ -92,10 +98,6 @@ body {
 .navigation-item a{
   text-decoration: none;
   color: #000000;
-}
-
-p{
-  margin: 0;
 }
 
 .header-button{
@@ -181,7 +183,24 @@ p{
   width: 140px;
 }
 
+
+
+
+
+
+
+
+
 /*блок main*/
+
+
+
+
+
+
+
+
+
 .main-page{
   margin-top: 64px;
   flex-grow: 1;
@@ -229,12 +248,14 @@ p{
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .divider-p {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  margin: 0;
   text-align: center;
   color: #333333;
 }
@@ -414,7 +435,7 @@ p{
   margin: 0;
   padding: 0;
   border: 0;
-  display: inline-block;
+  display: flex;
 }
 
 .subscribe-form input[type="email"]{
@@ -430,7 +451,7 @@ p{
   font-size: 18px;
   line-height: 24px;
 
-  border:0;
+  border: none;
 }
 
 .subscribe-form input[type="submit"]{
@@ -441,14 +462,13 @@ p{
   color: #FFFFFF;
   padding: 8px 0;
   margin:0;
-  margin-left: -4px;
 
   box-sizing: border-box;
 
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  border: 0;
+  border: none;
 
   cursor: pointer;
 }
