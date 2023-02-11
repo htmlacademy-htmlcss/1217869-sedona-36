@@ -94,10 +94,6 @@ body {
   color: #000000;
 }
 
-p{
-  margin: 0;
-}
-
 .header-button{
   height: 64px;
   display: flex;
@@ -181,7 +177,24 @@ p{
   width: 140px;
 }
 
+
+
+
+
+
+
+
+
 /*блок main*/
+
+
+
+
+
+
+
+
+
 .main-page{
   margin-top: 64px;
   flex-grow: 1;
@@ -229,12 +242,14 @@ p{
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .divider-p {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  margin: 0;
   text-align: center;
   color: #333333;
 }
