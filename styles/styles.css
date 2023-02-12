@@ -427,6 +427,7 @@ body {
 .subscribe-h2{
   margin: 0;
   margin-bottom: 20px;
+  text-transform: uppercase;
 
   font-weight: 700;
   font-size: 30px;
