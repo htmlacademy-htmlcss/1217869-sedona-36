@@ -586,7 +586,11 @@ body {
 
 .filter-h3{
   margin: 0;
+  padding: 0;
   margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .filter-label {
@@ -601,8 +605,53 @@ body {
   margin-bottom: 0;
 }
 
+.price {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-block {
+  display: flex;
+  gap: 2px;
+}
+
+.price-input {
+  padding: 12px 20px;
+  background: #F2F2F2;
+  flex-shrink: 1;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+  width:103px;
+}
+
+.price-input-start {
+  border-radius: 4px 0 0 4px;
+}
+
+.price-input-end {
+  border-radius: 0 4px 4px 0;
+}
+
+.price-label span {
+  position: absolute;
+  color: #000000;
+  opacity: 0.3;
+  text-align: right;
+  margin-left: -30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+
+  margin-top: 12px;
+}
+
+
+
 .filter-buttons {
   display: flex;
+  justify-content: end;
   flex-direction: column;
   gap: 40px;
   align-items: center;
@@ -743,8 +792,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-
-  gap:20px;
+  gap: 20px;
 }
 
 
