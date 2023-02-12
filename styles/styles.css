@@ -502,17 +502,17 @@ body {
   line-height: 40px;
 }
 
-.footer-social{
+.footer-social {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 20px;
-}
-
-.footer-social{
-  list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.footer-social-item {
+  list-style-type: none;
 }
 
 .img-social {
@@ -645,7 +645,7 @@ body {
   color: #000000;
   opacity: 0.3;
   text-align: right;
-  margin-left: -30px;
+  margin-left: -35px;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -670,7 +670,7 @@ body {
 
 .form-button-reset {
   background: none;
-  width: 140px;
+  padding: 8px 50px;
 }
 
 .catalog {
