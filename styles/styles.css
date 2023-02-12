@@ -544,7 +544,7 @@ body {
 .filter{
   background-color: #000000;
   background-image: url("../images/filter.png");
-  background-size: 102%;
+  background-size: auto auto;
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -567,9 +567,17 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 167px;
+  gap: 140px;
+}
+
+.filter-left {
+  display: flex;
+  gap: 70px;
+}
+
+.filter-right {
+  display: flex;
+  gap: 70px;
 }
 
 .filter-search{
@@ -582,16 +590,32 @@ body {
 }
 
 .filter-label {
-  display: inline-block;
+  display: flex;
+  gap: 16px;
   margin-bottom: 16px;
   font-size: 18px;
   line-height: 23px;
-
-  color: #FFFFFF;
 }
 
 .filter-label:last-child {
   margin-bottom: 0;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.form-button-apply {
+  background: #82B3D3;
+  padding: 8px 50px;
+}
+
+.form-button-reset {
+  background: none;
+  width: 140px;
 }
 
 .catalog {
