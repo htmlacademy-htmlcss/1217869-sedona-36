@@ -637,6 +637,7 @@ body {
 
 .hotel-find {
   font-weight: 700;
+  margin: 0;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
