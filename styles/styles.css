@@ -509,6 +509,12 @@ body {
   gap: 20px;
 }
 
+.footer-social{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .img-social {
   display: block;
 }
@@ -653,7 +659,7 @@ body {
   display: flex;
   justify-content: end;
   flex-direction: column;
-  gap: 40px;
+  gap: 32px;
   align-items: center;
 }
 
