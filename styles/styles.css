@@ -499,6 +499,8 @@ body {
 
 .address{
   font-style: normal;
+  text-decoration: none;
+  color: #000000;
   font-size: 40px;
   line-height: 40px;
 }
