@@ -189,6 +189,13 @@ body {
   width: 140px;
 }
 
+.search-button {
+  padding: 8px 50px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+}
+
 .hotel-rating-all {
   background: #F2F2F2;
   color: #333333;
