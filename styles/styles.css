@@ -414,7 +414,7 @@ body {
 
 .subscribe {
   background-color: #000000;
-  background-image: url("../images/subscribe.png");
+  background-image: url("../images/subscribe.jpg");
   background-size: cover;
   color: #FFFFFF;
   display: flex;
@@ -572,7 +572,7 @@ body {
 
 .filter{
   background-color: #000000;
-  background-image: url("../images/filter.png");
+  background-image: url("../images/filter.jpg");
   background-size: cover;
   color: #FFFFFF;
   display: flex;
