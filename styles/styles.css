@@ -435,8 +435,7 @@ body {
   text-align: center;
   justify-content: center;
 
-  padding-top: 96px;
-  padding-bottom: 104px;
+  padding: 96px 258px 104px;
 }
 
 .subscribe-white .subscribe-p {
@@ -467,6 +466,7 @@ body {
   padding: 0;
   border: 0;
   display: flex;
+  width: 100%;
 }
 
 .subscribe-form input[type="email"]{
@@ -474,9 +474,8 @@ body {
   background: #F2F2F2;
   color: #000000;
   border-radius: 4px 0 0 4px;
-  width: 452px;
   margin: 0;
-
+  flex-grow: 1;
   box-sizing: border-box;
 
   font-size: 18px;
@@ -488,10 +487,9 @@ body {
 .subscribe-form input[type="submit"]{
   background: #82B3D3;
   border-radius: 0 4px 4px 0;
-  width: 232px;
   text-align: center;
   color: #FFFFFF;
-  padding: 8px 0;
+  padding: 8px 50px;
   margin:0;
 
   box-sizing: border-box;
