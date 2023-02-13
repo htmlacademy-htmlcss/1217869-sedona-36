@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <base href="https://htmlacademy-htmlcss.github.io/1217869-sedona-36/7/">
+</head>
+  <body>
+    <h1 class="visually-hidden">Главная страница Седоны</h1>
+    <header class="page-header" data-test="header">
+
+      <div class="header-left">
+      <a class="logo" href="https://htmlacademy.ru/" title="перейти на сайт компании htmlacademy."><img src="images/logo.svg" width="140" height="70" class="img-logo" alt="логотип компании."></a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html" title="перейти на главную страницу сайта.">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="catalog.html" title="перейти на страницу с выбором гостиницы.">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+      <div class="header-button">
+        <a class="search" href="#" title="поиск гостиницы."></a>
+        <a class="like" href="#" title="просмотреть понравившиеся гостиницы."></a>
+        <a class="button brown-button" href="#" title="найти подходящую гостиницу.">ХОЧУ СЮДА!</a>
+      </div>
+    </header>
+
+    <main class="main-page" data-test="main">
+      <section class="hero" data-test="hero">
+        <article class="welcome">
+          <img src="images/welcome.svg" width="458" height="352" alt="welcome.">
+          <div class="decor"></div>
+        </article>
+        <article class="divider">
+          <p class="divider-h">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+          <p class="divider-p">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </article>
+      </section>
+
+      <section class="frame">
+        <article class="frame-article-1">
+        <div class="card">
+          <p class="card-h">Настоящий городок</p>
+          <span class="rectangle card-rectangle-white"></span>
+          <p class="card-p">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
+        <div class="card-img">
+          <img src="images/photo-1.jpg" width="800" height="384" alt="фотография городка." class="frame-img">
+        </div>
+        </article>
+        <article class="frame-article-2">
+        <div class="card">
+          <p class="card-h">Небольшая<br>площадь</p>
+          <span class="rectangle card-rectangle-black"></span>
+          <p class="card-p">Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="card">
+          <p class="card-h">Красивая<br>дорога</p>
+          <span class="rectangle card-rectangle-black"></span>
+          <p class="card-p">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="card">
+          <p class="card-h">Мало<br>туристов</p>
+          <span class="rectangle card-rectangle-black"></span>
+          <p class="card-p">Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
+        </article>
+        <article class="frame-article-3">
+        <div class="card-img">
+          <img src="images/photo-2.jpg" width="800" height="385" alt="фотография каньона." class="frame-img">
+        </div>
+        <div class="card">
+          <p class="card-h">Там есть<br>мост дьявола</p>
+          <span class="rectangle card-rectangle-white"></span>
+          <p class="card-p">Да, по нему аттракцион для туристов, можно пройти! Если вы осмелитесь, разумеется</p>
+        </div>
+        </article>
+      </section>
+
+      <section class="benefits" data-test="advantages">
+      <article class="divider">
+        <p class="divider-h">Приезжайте в Седону отдохнуть<br>в комфорте и уюте!</p>
+        <p class="divider-p">Опытный персонал и качественное обслуживание!</p>
+      </article>
+
+      <article class="cards">
+        <div class="card">
+          <img src="images/house.svg" width="75" height="72" alt="иконка дома.">
+          <p class="card-h">Жильё</p>
+          <p class="card-p">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        </div>
+        <div class="card">
+          <img src="images/food.svg" width="74" height="70"  alt="иконка еды.">
+          <p class="card-h">Еда</p>
+          <p class="card-p">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+        <div class="card">
+          <img src="images/gift.svg" width="64" height="76"  alt="иконка подарка.">
+          <p class="card-h">Сувениры</p>
+          <p class="card-p">Не только китайского, но и настоящего местного производства!</p>
+        </div>
+      </article>
+      </section>
+
+      <section class="search-hotel" data-test="search">
+        <article class="divider">
+        <p class="divider-h">Заинтересовались?</p>
+        <p class="divider-p">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a href="catalog.html" class="button brown-button search-button" title="перейти на страницу с выбором гостиницы.">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        </article>
+      </section>
+
+      <section class="subscribe" data-test="subscribe">
+        <h2 class="subscribe-h2">Подпишитесь на рассылку</h2>
+        <p class="subscribe-p">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        <form method="post" class="subscribe-form">
+          <input type="email" placeholder="Ваш e-mail" name="subscribe-email" class="subscribe-email">
+          <input type="submit" value="ПОДПИСАТЬСЯ" class="subscribe-submit">
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer" data-test="footer">
+      <ul class="footer-social">
+        <li class="footer-social-item">
+        <a href="https://vk.com/htmlacademy" title="перейти в ВК."><img class="img-social" src="images/vk.svg" width="24" height="14"  alt="перейти в ВК."></a>
+        </li>
+        <li class="footer-social-item">
+        <a href="https://t.me/htmlacademy " title="перейти в Телеграм."><img class="img-social" src="images/telegram.svg" width="18" height="15"  alt="перейти в Телеграм."></a>
+        </li>
+        <li class="footer-social-item">
+        <a href="https://www.youtube.com/user/htmlacademyru" title="перейти на Youtube."><img class="img-social" src="images/youtube.svg" width="22" height="17"  alt="перейти на Youtube."></a>
+        </li>
+      </ul>
+      <a href="tel: +7 (812) 812-12-12" class="address">+7 (812) 812-12-12</a>
+      <img class="img-social" src="images/academy-logo.svg"  width="114" height="32"  alt="логотип HTML академии.">
+    </footer>
+
+    <div class="modal">
+      <img src="images/close.png" class="close-modal" width="14" height="14" alt="Закрыть.">
+      <h2 class="modal-h2">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+      <form method="post" class="form-model">
+        <p class="modal-p">
+          Дата Заезда:
+          <input type="date" name="date-in">
+        </p>
+        <span class="date-in-info">Мы не можем отправить вас в прошлое</span>
+        <p class="modal-p">
+          Дата Выезда:
+          <input type="date" name="date-in">
+        </p>
+        <span class="date-in-info">На эти даты есть свободные номера. Пока есть.</span>
+        <p class="modal-p">
+          Взрослые:
+          <button class="modal-add">-</button><input type="text" name="date-in"><button class="modal-add">+</button>
+        </p>
+        <p class="modal-p">
+          Дети: <button class="kid-info">i</button>
+          <button class="modal-add">-</button><input type="text" name="date-in"><button class="modal-add">+</button>
+        </p>
+        <div class="kid-info-block">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+        <input type="submit" value="НАЙТИ" class="modal-find">
+      </form>
+    </div>
+
+  </body>
+</html>
