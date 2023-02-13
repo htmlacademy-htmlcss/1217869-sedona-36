@@ -169,24 +169,46 @@ body {
   text-transform: uppercase;
 
   border: none;
+  cursor: pointer;
 }
 
 .brown-button {
   background: #756157;
 }
 
-.hotel-button-favorites {
-  background: #756157;
-  width: 140px;
+.brown-button:hover {
+  background: #615048;
 }
 
-.hotel-button-favorites-select {
+.blue-button {
+  background: #82B3D3;
+}
+
+.blue-button:hover {
+  background: #68A2CA;
+}
+
+.green-button {
   background: #7DB54F;
 }
 
-.hotel-button-more {
-  background: #82B3D3;
+.green-button:hover {
+  background: #6C9E42;
+}
+
+.hotel-button-favorites {
   width: 140px;
+}
+
+.hotel-button-more {
+  width: 140px;
+}
+
+.search-button {
+  padding: 8px 50px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 .hotel-rating-all {
@@ -294,7 +316,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 102px 85px;
   box-sizing: border-box;
   font-weight: 700;
@@ -336,6 +357,10 @@ body {
   grid-column: 2 / 4;
 }
 
+.frame-article-1 .card-p {
+  color: #ffffff;
+}
+
 .frame-article-2 .card:nth-child(1) {
   background: rgba(131, 179, 211, 0.12);
   color: #000000;
@@ -360,12 +385,17 @@ body {
   background: #82B3D3;
 }
 
+.frame-article-3 .card-p {
+  color: #ffffff;
+}
+
 .card-p {
   margin: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  color: #333333;
 }
 
 .card-h {
@@ -388,7 +418,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 81px 85px;
   gap: 30px;
 }
@@ -399,7 +428,8 @@ body {
 
 .subscribe {
   background-color: #000000;
-  background-image: url("../images/subscribe.png");
+  background-image: url("../images/subscribe.jpg");
+  background-size: cover;
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -420,8 +450,11 @@ body {
   text-align: center;
   justify-content: center;
 
-  padding-top: 96px;
-  padding-bottom: 104px;
+  padding: 96px 258px 104px;
+}
+
+.subscribe-white .subscribe-p {
+  color: #333333;
 }
 
 .subscribe-h2{
@@ -448,6 +481,7 @@ body {
   padding: 0;
   border: 0;
   display: flex;
+  width: 100%;
 }
 
 .subscribe-form input[type="email"]{
@@ -455,9 +489,8 @@ body {
   background: #F2F2F2;
   color: #000000;
   border-radius: 4px 0 0 4px;
-  width: 452px;
   margin: 0;
-
+  flex-grow: 1;
   box-sizing: border-box;
 
   font-size: 18px;
@@ -469,10 +502,9 @@ body {
 .subscribe-form input[type="submit"]{
   background: #82B3D3;
   border-radius: 0 4px 4px 0;
-  width: 232px;
   text-align: center;
   color: #FFFFFF;
-  padding: 8px 0;
+  padding: 8px 50px;
   margin:0;
 
   box-sizing: border-box;
@@ -483,6 +515,9 @@ body {
   border: none;
 
   cursor: pointer;
+}
+.subscribe-form input[type="submit"]:hover{
+  background: #68A2CA;
 }
 
 
@@ -499,6 +534,8 @@ body {
 
 .address{
   font-style: normal;
+  text-decoration: none;
+  color: #000000;
   font-size: 40px;
   line-height: 40px;
 }
@@ -550,8 +587,8 @@ body {
 
 .filter{
   background-color: #000000;
-  background-image: url("../images/filter.png");
-  background-size: auto auto;
+  background-image: url("../images/filter.jpg");
+  background-size: cover;
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -589,6 +626,7 @@ body {
 
 .filter-search-list{
   display: flex;
+  flex-wrap: wrap;
   gap: 28px;
   padding: 0;
   margin: 0;
@@ -599,6 +637,7 @@ body {
 .filter-search-item{
   position: relative;
 }
+
 
 .filter-search-item:not(:last-child)::after{
   content: "";
@@ -628,6 +667,10 @@ body {
   margin-bottom: 16px;
   font-size: 18px;
   line-height: 23px;
+}
+
+.filter-label:hover {
+  opacity: 0.6;
 }
 
 .filter-label:last-child {
@@ -687,13 +730,14 @@ body {
 }
 
 .form-button-apply {
-  background: #82B3D3;
   padding: 8px 50px;
+  width: 100%;
 }
 
 .form-button-reset {
   background: none;
   padding: 8px 50px;
+  width: 100%;
 }
 
 .catalog {
@@ -737,10 +781,29 @@ body {
   color: #333333;
 }
 
+.catalog-filter-select:hover {
+  border: 2px solid #68A2CA;
+}
+
+.catalog-filter-select:focus {
+  border: 2px solid #68A2CA;
+}
+
+.catalog-filter-select:active {
+  border: 2px solid #3F5E72;
+}
+
 .catalog-filter-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.catalog-filter-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 48px;
   min-height: 48px;
-
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   background-color: #ffffff;
@@ -829,6 +892,7 @@ body {
   display: flex;
   gap: 8px;
   margin: 0;
+  padding: 0;
 }
 
 .catalog-pagination-item {
