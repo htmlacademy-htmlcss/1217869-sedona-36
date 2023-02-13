@@ -294,7 +294,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 102px 85px;
   box-sizing: border-box;
   font-weight: 700;
