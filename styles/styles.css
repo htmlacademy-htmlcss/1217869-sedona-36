@@ -620,6 +620,7 @@ body {
   position: relative;
 }
 
+
 .filter-search-item:not(:last-child)::after{
   content: "";
   position: absolute;
@@ -648,6 +649,10 @@ body {
   margin-bottom: 16px;
   font-size: 18px;
   line-height: 23px;
+}
+
+.filter-label:hover {
+  opacity: 0.6;
 }
 
 .filter-label:last-child {
