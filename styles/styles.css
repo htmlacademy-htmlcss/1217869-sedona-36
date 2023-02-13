@@ -169,23 +169,38 @@ body {
   text-transform: uppercase;
 
   border: none;
+  cursor: pointer;
 }
 
 .brown-button {
   background: #756157;
 }
 
-.hotel-button-favorites {
-  background: #756157;
-  width: 140px;
+.brown-button:hover {
+  background: #615048;
 }
 
-.hotel-button-favorites-select {
+.blue-button {
+  background: #82B3D3;
+}
+
+.blue-button:hover {
+  background: #68A2CA;
+}
+
+.green-button {
   background: #7DB54F;
 }
 
+.green-button:hover {
+  background: #6C9E42;
+}
+
+.hotel-button-favorites {
+  width: 140px;
+}
+
 .hotel-button-more {
-  background: #82B3D3;
   width: 140px;
 }
 
@@ -501,6 +516,9 @@ body {
 
   cursor: pointer;
 }
+.subscribe-form input[type="submit"]:hover{
+  background: #68A2CA;
+}
 
 
 .page-footer{
@@ -712,7 +730,6 @@ body {
 }
 
 .form-button-apply {
-  background: #82B3D3;
   padding: 8px 50px;
   width: 100%;
 }
