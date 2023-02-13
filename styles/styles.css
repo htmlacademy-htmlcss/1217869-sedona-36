@@ -297,43 +297,45 @@ body {
   color: #333333;
 }
 
-.frame {
-  display: grid;
-  grid-template-rows: auto;
-}
-
-.frame-article-1 {
-  display: grid;
-  grid-template-columns: repeat(3, 400px);
-}
-.frame-article-2 {
-  display: grid;
-  grid-template-columns: repeat(3, 400px);
-}
-.frame-article-3 {
-  display: grid;
-  grid-template-columns: repeat(3, 400px);
+.frame-article {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  min-height: 181px;
   padding: 102px 85px;
+  width: 230px;
   box-sizing: border-box;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  list-style-type: none;
+  align-items: center;
   gap: 30px;
+  flex-grow: 1;
+  background: rgba(131, 179, 211, 0.12);
 }
 
-.card-img {
-  overflow: hidden;
+.card:nth-child(2n-1) {
+  background: rgba(131, 179, 211, 0.2);
 }
 
-.frame-img {
+.card-wrap {
+  gap: 0;
+  padding: 0;
+  flex-direction: row;
+  width: 1200px;
+}
+
+.card-div-img {
   height: 100%;
-  width: auto;
+  object-fit: cover;
 }
 
 .rectangle {
@@ -343,8 +345,22 @@ body {
   display: block;
 }
 
-.frame-article-1 .card {
+.card-div {
   background-color: #82B3D3;
+  min-height: 181px;
+  padding: 102px 85px;
+  width: 230px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-div .card-p {
+  color: #FFFFFF;
+}
+
+.card-div .card-h {
   color: #FFFFFF;
 }
 
@@ -354,42 +370,6 @@ body {
 
 .card-rectangle-black {
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-.frame-article-1 .card-img {
-  grid-column: 2 / 4;
-}
-
-.frame-article-1 .card-p {
-  color: #ffffff;
-}
-
-.frame-article-2 .card:nth-child(1) {
-  background: rgba(131, 179, 211, 0.12);
-  color: #000000;
-}
-
-
-.frame-article-2 .card:nth-child(2) {
-  background: rgba(131, 179, 211, 0.2);
-}
-
-
-.frame-article-2 .card:nth-child(3) {
-  background: rgba(131, 179, 211, 0.12);
-}
-
-.frame-article-3 .card-img {
-  grid-column: 1 / 3;
-}
-
-.frame-article-3 .card {
-  color: #ffffff;
-  background: #82B3D3;
-}
-
-.frame-article-3 .card-p {
-  color: #ffffff;
 }
 
 .card-p {
@@ -415,17 +395,20 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 400px);
   grid-template-rows: auto;
+  margin: 0;
+  padding: 0;
 }
 
-.cards .card {
+.cards-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 81px 85px;
   gap: 30px;
+  list-style-type: none;
 }
 
-.cards .card:nth-child(2n-1) {
+.cards-item:nth-child(2n-1) {
   background: rgba(131, 179, 211, 0.12);
 }
 
