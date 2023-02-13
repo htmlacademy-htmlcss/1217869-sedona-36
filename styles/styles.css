@@ -342,6 +342,10 @@ body {
   grid-column: 2 / 4;
 }
 
+.frame-article-1 .card-p {
+  color: #ffffff;
+}
+
 .frame-article-2 .card:nth-child(1) {
   background: rgba(131, 179, 211, 0.12);
   color: #000000;
@@ -366,12 +370,17 @@ body {
   background: #82B3D3;
 }
 
+.frame-article-3 .card-p {
+  color: #ffffff;
+}
+
 .card-p {
   margin: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  color: #333333;
 }
 
 .card-h {
@@ -428,6 +437,10 @@ body {
 
   padding-top: 96px;
   padding-bottom: 104px;
+}
+
+.subscribe-white .subscribe-p {
+  color: #333333;
 }
 
 .subscribe-h2{
