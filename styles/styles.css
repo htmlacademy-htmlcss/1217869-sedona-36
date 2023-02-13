@@ -709,11 +709,13 @@ body {
 .form-button-apply {
   background: #82B3D3;
   padding: 8px 50px;
+  width: 100%;
 }
 
 .form-button-reset {
   background: none;
   padding: 8px 50px;
+  width: 100%;
 }
 
 .catalog {
@@ -757,10 +759,29 @@ body {
   color: #333333;
 }
 
+.catalog-filter-select:hover {
+  border: 2px solid #68A2CA;
+}
+
+.catalog-filter-select:focus {
+  border: 2px solid #68A2CA;
+}
+
+.catalog-filter-select:active {
+  border: 2px solid #3F5E72;
+}
+
 .catalog-filter-icons {
+  display: flex;
+  gap: 8px;
+}
+
+.catalog-filter-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 48px;
   min-height: 48px;
-
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   background-color: #ffffff;
