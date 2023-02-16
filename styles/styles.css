@@ -523,12 +523,12 @@ body {
 
   cursor: pointer;
 }
-.subscribe-form input[type="submit"]:hover{
+.subscribe-form input[type="submit"]:hover {
   background: #68A2CA;
 }
 
 
-.page-footer{
+.page-footer {
   display: flex;
   flex-direction: row;
   color: #000000;
@@ -539,12 +539,20 @@ body {
   min-height: 50px;
 }
 
-.address{
+.address {
   font-style: normal;
   text-decoration: none;
   color: #000000;
   font-size: 40px;
   line-height: 40px;
+}
+
+.address:hover, .address:focus {
+  color: #756157;
+}
+
+.address:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .footer-social {
@@ -566,11 +574,25 @@ body {
 .icon-svg path{
   fill: #83B3D3;
 }
-.icon-svg:hover path, .icon-svg:focus path{
+.footer-social-item:hover path, .icon-svg:focus path{
   fill: #68A2CA;
 }
 .icon-svg:active path{
-  fill:rgba(104, 162, 202, 0.3);
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.logo-html-svg {
+  padding: 13px 12px;
+  fill: #000000;
+  cursor: pointer;
+}
+
+.logo-html-svg:hover path, .logo-html-svg:hover path {
+  fill: #756157;
+}
+
+.logo-html-svg:active path{
+  fill: rgba(117, 97, 87, 0.3);
 }
 
 .img-social {
