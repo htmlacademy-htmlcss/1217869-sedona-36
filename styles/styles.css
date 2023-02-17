@@ -918,6 +918,7 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .catalog-filter-icon:hover {
