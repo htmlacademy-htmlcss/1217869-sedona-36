@@ -89,13 +89,15 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 .navigation-link{
   text-decoration: none;
   color: #000000;
-  padding: 20px 16px;
-  display: block;
+  padding: 20px 16px 0;
+  display: flex;
+  flex-direction: column;
 
   font-weight: 700;
   font-size: 20px;
@@ -103,6 +105,17 @@ body {
 
   text-transform: capitalize;
   box-sizing: border-box;
+}
+
+.navigation-link::after {
+  content: "";
+  border-bottom: 2px solid transparent;
+  padding-top:18px;
+}
+
+.navigation-link:hover::after {
+  content: "";
+  border-bottom: 2px solid #756257;
 }
 
 .header-button{
@@ -530,7 +543,6 @@ body {
 
 .page-footer {
   display: flex;
-  flex-direction: row;
   color: #000000;
   padding: 40px 70px 30px;
   align-items: center;
@@ -540,6 +552,7 @@ body {
 }
 
 .address {
+  display: block;
   font-style: normal;
   text-decoration: none;
   color: #000000;
