@@ -551,8 +551,13 @@ body {
 
   cursor: pointer;
 }
-.subscribe-form input[type="submit"]:hover {
+.subscribe-form input[type="submit"]:hover, .subscribe-form input[type="submit"]:focus {
   background: #68A2CA;
+}
+
+.subscribe-form input[type="submit"]:active {
+  background: #68A2CA;
+  color:rgba(255, 255, 255, 0.3)
 }
 
 
@@ -743,6 +748,10 @@ body {
   opacity: 0.6;
 }
 
+.filter-label:active {
+  opacity: 0.3;
+}
+
 .filter-label:last-child {
   margin-bottom: 0;
 }
@@ -808,7 +817,23 @@ body {
   background: none;
   padding: 8px 50px;
   width: 100%;
+  border: 3px solid transparent;
+  box-sizing: border-box;
 }
+
+.form-button-reset:hover {
+  opacity: 0.6;
+}
+
+.form-button-reset:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.form-button-reset:active {
+  opacity: 0.3;
+}
+
 
 .catalog {
   display: flex;
