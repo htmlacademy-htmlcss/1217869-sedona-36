@@ -267,5 +267,87 @@
       </a>
     </footer>
 
+
+
+
+
+    <div class="modal">
+      <div class="modal-head">
+        <h2 class="modal-h2">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+        <a href="#" class="close">
+          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" fill="black"/>
+          </svg>
+        </a>
+      </div>
+      <form method="post" class="form-model">
+
+        <p class="modal-date">
+          <span class="modal-date-span">Дата Заезда:</span>
+          <span class="modal-date-div">
+            <input type="date" name="date-in" class="date">
+
+            <span class="date-in-info-red">Мы не можем отправить вас в прошлое</span>
+          </span>
+        </p>
+        <p class="modal-date">
+          <span class="modal-date-span">Дата Выезда:</span>
+          <span class="modal-date-div">
+            <input type="date" name="date-out" class="date">
+
+            <span class="date-in-info">На эти даты есть свободные номера. Пока есть.</span>
+          </span>
+        </p>
+        <div class="modal-count">
+          <div class="modal-count-left">
+            <p class="modal-p">
+            Взрослые:
+            </p>
+            <div class="modal-div">
+              <button class="modal-sub"><svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                </svg></button>
+            <input type="text" name="date-in" class="input-count" value="2">
+            <button class="modal-add"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+              </svg></button>
+            </div>
+          </div>
+          <div class="modal-count-left">
+            <div class="modal-div">
+            <p class="modal-p">
+              Дети:
+            </p>
+            <button class="kid-info">i</button>
+            </div>
+            <div class="modal-div">
+
+              <button class="modal-sub"><svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                </svg></button>
+              <input type="text" name="date-in" class="input-count" value="2">
+              <button class="modal-add"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                </svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="kid-info-block">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+        <input type="submit" value="НАЙТИ" class="modal-find">
+      </form>
+    </div>
+
   </body>
 </html>
+
+<script>
+
+  let modal = document.getElementsByClassName("modal")[0];
+  function fopen() {
+    modal.style.display = 'flex';
+  };
+  let close = document.getElementsByClassName("close")[0];
+  close.onclick = function(){
+    modal.style.display = 'none';
+  };
+  </script>
