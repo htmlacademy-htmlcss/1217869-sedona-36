@@ -606,13 +606,13 @@ body {
   padding: 13px 12px;
 }
 
-.icon-svg path{
+.icon-svg path {
   fill: #83B3D3;
 }
-.footer-social-item:hover path, .icon-svg:focus path{
+.footer-social-item:hover path, .icon-svg:focus path {
   fill: #68A2CA;
 }
-.icon-svg:active path{
+.icon-svg:active path {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -625,7 +625,7 @@ body {
   fill: #756157;
 }
 
-.logo-html-svg:active path{
+.logo-html-svg:active path {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -633,13 +633,233 @@ body {
   display: block;
 }
 
-.modal{
+.modal {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left:-359px;
+  margin-top:-288px;
+  padding: 64px 70px;
+  width: 577px;
+  min-height: 448px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.modal-head {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-self: flex-start;
+}
+
+.modal-h2 {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+
+  margin-bottom: 64px;
+}
+
+.close {
+  display: flex;
+  position: absolute;
+  background: #F2F2F2;
+  color: #000000;
+  width: 14px;
+  height: 14px;
+  right: 52px;
+  padding: 20px;
+  margin: 0;
+  border-radius: 50%;
+  border: 3px solid transparent;
+}
+
+.close:hover {
+  background: #E6E6E6;
+  color: #000000;
+}
+
+.close:focus {
+  background: #E6E6E6;
+  color: #000000;
+  border: 3px solid #83B3D3
+}
+
+.close:active {
+  opacity: 0.3;
+}
+
+.form-model {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.modal-date {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-date-div {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+
+.modal-date-span {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.date {
+  background: #F2F2F2;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  width: 400px;
+  padding: 12px 20px;
+}
+
+.date-in-info {
+  position: absolute;
+  top: 52px;
+  padding: 0 20px;
+}
+
+.date-in-info-red {
+  position: absolute;
+  color: #FF5757;
+  top: 52px;
+  padding: 0 20px;
+}
+
+.modal-p {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.modal-count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 88px;
+}
+
+.modal-count-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.modal-div {
+  display: flex;
+}
+
+.kid-info {
+  background: #83B3D3;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-left: 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.modal-sub {
+  background: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  padding: 14px 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.modal-add {
+  background: #F2F2F2;
+  border-radius: 0 4px 4px 0;
+  border: none;
+  padding: 14px 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.input-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 10px;
+  border: none;
+  background: #F2F2F2;
+  color: #000000;
+  width:10px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.kid-info-block {
   display: none;
 }
 
+.modal-find {
+  background: #83B3D3;
+  border-radius: 10px;
+  padding: 18px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+}
 
+.modal-find:hover, .modal-find:focus {
+  background: #68A2CA;
+}
 
-
+.modal-find:active {
+  background: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
 
 
 
