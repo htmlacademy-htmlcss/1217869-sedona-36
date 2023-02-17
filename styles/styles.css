@@ -273,7 +273,8 @@ body {
 }
 
 .welcome {
-  width: 1200px;
+  width: 100%;
+  height: 485px;
   text-align: center;
   padding-top: 50px;
   background-image: url("../images/index-background.jpg");
@@ -284,9 +285,10 @@ body {
 
 .decor {
   background-image: url("../images/decor-white.svg");
-  height: 57px;
+  background-position: 0 22px;
+  background-repeat: no-repeat;
+  height: 100%;
   width: 100%;
-  top: 485px;
 }
 
 .divider {
