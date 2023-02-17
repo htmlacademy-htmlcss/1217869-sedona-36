@@ -30,7 +30,7 @@
       <div class="header-button">
         <a class="search" href="#" title="поиск гостиницы."></a>
         <a class="like" href="#" title="просмотреть понравившиеся гостиницы."></a>
-        <a class="button brown-button" href="#" title="найти подходящую гостиницу.">ХОЧУ СЮДА!</a>
+        <a class="button brown-button" href="#" onclick="fopen()" title="найти подходящую гостиницу.">ХОЧУ СЮДА!</a>
       </div>
     </header>
 
@@ -212,3 +212,14 @@
 
   </body>
 </html>
+<script>
+
+let modal = document.getElementsByClassName("modal")[0];
+function fopen() {
+  modal.style.display = 'flex';
+};
+let close = document.getElementsByClassName("close")[0];
+close.onclick = function(){
+  modal.style.display = 'none';
+};
+</script>
