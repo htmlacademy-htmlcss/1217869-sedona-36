@@ -689,6 +689,23 @@ body {
   gap: 140px;
 }
 
+.breadcrubs {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.breadcrubs:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrubs:focus {
+  text-decoration: none;
+}
+
+.breadcrubs:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .filter-left {
   display: flex;
   gap: 70px;
@@ -717,13 +734,13 @@ body {
 .filter-search-item:not(:last-child)::after{
   content: "";
   position: absolute;
-  margin-top: 7px;
+  margin-top: 5px;
   margin-left: 11px;
-  width: 6px;
-  height: 9px;
+  width: 8px;
+  height: 19px;
 
   background-image: url("../images/angle.svg");
-  background-size: 6px;
+  background-size: 9px;
   background-repeat: no-repeat;
 }
 
@@ -901,6 +918,18 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   background-color: #ffffff;
+}
+
+.catalog-filter-icon:hover {
+  border: 2px solid #000000;
+}
+
+.catalog-filter-icon:focus {
+  border: 2px solid #68A2CA;
+}
+
+.catalog-filter-icon:active {
+  border: 2px solid #000000;
 }
 
 .catalog-filter {
