@@ -675,16 +675,16 @@ body {
 
 .close {
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   background: #F2F2F2;
   color: #000000;
-  width: 14px;
-  height: 14px;
+  width: 52px;
+  height: 52px;
   right: 52px;
-  padding: 20px;
   margin: 0;
   border-radius: 50%;
-  border: 3px solid transparent;
 }
 
 .close:hover {
@@ -695,6 +695,10 @@ body {
 .close:focus {
   background: #E6E6E6;
   color: #000000;
+  width: 49px;
+  height: 49px;
+  right: 51px;
+  margin-top: -1px;
   border: 3px solid #83B3D3
 }
 
@@ -736,11 +740,30 @@ body {
 .date {
   background: #F2F2F2;
   border-radius: 4px;
+  border: none;
+  font-family: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   width: 400px;
-  padding: 12px 20px;
+  padding: 11px 20px;
+  max-height: 48px;
+}
+
+.calendar {
+  display: flex;
+  position: absolute;
+  right: 22px;
+  top: 16px;
+  width: 16px;
+  height: 15px;
+  border: none;
+  cursor: pointer;
+  background-image: url("../images/calendar.png");
+}
+
+.date::-webkit-calendar-picker-indicator{
+  display: none;
 }
 
 .date-in-info {
@@ -784,6 +807,7 @@ body {
 
 .modal-div {
   display: flex;
+  position: relative;
 }
 
 .kid-info {
@@ -804,12 +828,14 @@ body {
   background: #F2F2F2;
   border-radius: 4px 0 0 4px;
   border: none;
-  padding: 14px 10px;
+  width: 40px;
+  height: 48px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -817,12 +843,14 @@ body {
   background: #F2F2F2;
   border-radius: 0 4px 4px 0;
   border: none;
-  padding: 14px 10px;
+  width: 40px;
+  height: 48px;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 
@@ -843,7 +871,30 @@ body {
 }
 
 .kid-info-block {
-  display: none;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 256px;
+  height: 143px;
+  background: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 18px 18px 18px 22px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  left: -53px;
+  top: 40px;
+  z-index: 2;
+}
+
+.kid-info-block::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/triangle.svg");
+  width: 19px;
+  height: 9px;
+  top: -9px;
+  left: calc(50% - 10px);
 }
 
 .modal-find {
