@@ -964,6 +964,8 @@ body {
 .filter-subscribe-form{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  width: 1060px;
   justify-content: space-between;
   gap: 140px;
 }
@@ -985,9 +987,7 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.type-of-house{
-  min-width: 133px;
-}
+
 
 .filter-left {
   display: flex;
@@ -1038,13 +1038,15 @@ body {
 
 .filter-label {
   display: flex;
-  gap: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 40px;
   font-size: 18px;
   line-height: 23px;
   position: relative;
 }
 
+.filter-label input {
+  display: none;
+}
 
 .control-mark {
   position: absolute;
