@@ -695,6 +695,8 @@ body {
   right: 52px;
   margin: 0;
   border-radius: 50%;
+  border: none;
+  cursor: pointer;
 }
 
 .close:hover {
@@ -705,10 +707,6 @@ body {
 .close:focus {
   background: #E6E6E6;
   color: #000000;
-  width: 49px;
-  height: 49px;
-  right: 51px;
-  margin-top: -1px;
   border: 3px solid #83B3D3
 }
 
