@@ -275,7 +275,7 @@
 
 
 
-
+    <div class="modal-fon">
     <div class="modal">
       <div class="modal-head">
         <h2 class="modal-h2">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
@@ -341,6 +341,7 @@
         <input type="submit" value="НАЙТИ" class="modal-find">
       </form>
     </div>
+    </div>
 
   </body>
 </html>
@@ -348,13 +349,12 @@
 <script>
 
   let modal = document.getElementsByClassName("modal")[0];
+  let modal_fon = document.getElementsByClassName("modal-fon")[0];
   function fopen() {
-    modal.style.display = 'flex';
+    modal_fon.style.display = 'flex';
   };
-
   let close = document.getElementsByClassName("close")[0];
   close.onclick = function(){
-    modal.style.display = 'none';
+    modal_fon.style.display = 'none';
   };
-
-</script>
+  </script>
