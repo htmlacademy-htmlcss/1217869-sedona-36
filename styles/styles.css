@@ -762,6 +762,10 @@ body {
   max-height: 48px;
 }
 
+.date:disabled {
+  color: #000;
+}
+
 .calendar {
   display: flex;
   position: absolute;
@@ -772,10 +776,6 @@ body {
   border: none;
   cursor: pointer;
   background-image: url("../images/calendar.png");
-}
-
-.date::-webkit-calendar-picker-indicator{
-  display: none;
 }
 
 .date-in-info {
@@ -896,7 +896,9 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  width: 10px;
+  width: 30px;
+  height: 48px;
+  box-sizing: border-box;
 
 }
 
@@ -1418,6 +1420,7 @@ body {
   flex-direction: row;
   align-items: center;
   width: 140px;
+  gap: 6px;
 }
 
 .stars img {
