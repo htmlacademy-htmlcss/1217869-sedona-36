@@ -28,9 +28,9 @@
         </nav>
         </div>
         <div class="header-button">
-          <button class="search" title="поиск гостиницы."></button>
-          <button class="like" title="просмотреть понравившиеся гостиницы."></button>
-          <a href="#" class="button brown-button" onclick="fopen()" title="найти подходящую гостиницу.">ХОЧУ СЮДА!</a>
+          <a class="search" href="#" title="поиск гостиницы."></a>
+          <a class="like" href="#" title="просмотреть понравившиеся гостиницы."></a>
+          <a class="button brown-button" href="#" onclick="fopen()" title="найти подходящую гостиницу.">ХОЧУ СЮДА!</a>
         </div>
       </header>
 
@@ -39,29 +39,32 @@
         <h2 class="filter-h2">Гостиницы Седоны</h2>
         <ul class="filter-search-list">
           <li class="filter-search-item">
-            <a href="index.html">
+            <a href="index.html" title="вернуться на главную.">
               <img src="images/house-mini.svg" width="12" height="12" alt="иконка домой.">
             </a>
           </li>
           <li class="filter-search-item">
-          <a href="#" class="breadcrubs">Гостиницы</a>
+          <a href="#" class="breadcrubs" title="перейти на гостиницы.">Гостиницы</a>
           </li>
         </ul>
-        <form method="post" class="filter-subscribe-form">
+        <form method="post" class="filter-subscribe-form" action="https://echo.htmlacademy.ru">
           <article class="filter-left">
           <div class="infrastructure">
-            <h3 class="filter-h3">Инфраструктура</h3>
+            <h3 class="filter-h3">Инфраструктура:</h3>
             <label class="filter-label">
               <input type="checkbox" name="swimming-pool" checked>
-              Бассейн
+              <span class="control-mark"></span>
+              <span class="control-label">Бассейн</span>
             </label>
             <label class="filter-label">
               <input type="checkbox" name="parking" checked>
-              Парковка
+              <span class="control-mark"></span>
+              <span class="control-label">Парковка</span>
             </label>
             <label class="filter-label">
               <input type="checkbox" name="wifi">
-              Wi-Fi
+              <span class="control-mark"></span>
+              <span class="control-label">Wi-Fi</span>
             </label>
           </div>
 
@@ -69,15 +72,18 @@
             <h3 class="filter-h3">Тип Жилья:</h3>
             <label class="filter-label">
               <input type="radio" name="type-of-house" value="hotel">
-              Гостиница
+              <span class="control-mark-round"></span>
+              <span class="control-label">Гостиница</span>
             </label>
             <label class="filter-label">
               <input type="radio" name="type-of-house" value="motel">
-              Мотель
+              <span class="control-mark-round"></span>
+              <span class="control-label">Мотель</span>
             </label>
             <label class="filter-label">
               <input type="radio" name="type-of-house" value="apartments">
-              Апартаменты
+              <span class="control-mark-round"></span>
+              <span class="control-label">Апартаменты</span>
             </label>
           </div>
           </article>
@@ -98,8 +104,8 @@
             <div class="price-range">
               <div class="price-line"></div>
               <div class="price-line-select"></div>
-              <button class="price-line-left" title="нижняя цена."></button>
-              <button class="price-line-right" title="верхняя цена."></button>
+              <button class="price-line-left" type="button" title="нижняя цена."></button>
+              <button class="price-line-right" type="button" title="верхняя цена."></button>
             </div>
           </div>
 
@@ -116,14 +122,15 @@
         <article class="catalog-filter">
           <p class="hotel-find">Найдено гостиниц: 38</p>
           <div class="hotel-find-right">
-          <select class="catalog-filter-select">
+          <select class="catalog-filter-select" area-label="сортировка.">
+            <option>Сначала популярные</option>
             <option selected>Сначала дешевые</option>
             <option>Сначала дорогие</option>
           </select>
           <div class="catalog-filter-icons">
-            <button class="catalog-filter-icon" title="отобразить отели в виде карточек"><img src="images/icon-cards.svg" width="16" height="14" alt="отобразить в виде карточек."></button>
-            <button class="catalog-filter-icon" title="отобразить отели в крупном масштабе"><img src="images/icon-screen.svg" width="16" height="14" alt="отобразить в крупном масштабе."></button>
-            <button class="catalog-filter-icon" title="отобразить отели в виде списка"><img src="images/icon-list.svg" width="16" height="14" alt="отобразить в виде списка."></button>
+            <button class="catalog-filter-icon" type="button" title="отобразить отели в виде карточек"><img src="images/icon-cards.svg" width="16" height="14" alt="отобразить в виде карточек."></button>
+            <button class="catalog-filter-icon" type="button" title="отобразить отели в крупном масштабе"><img src="images/icon-screen.svg" width="16" height="14" alt="отобразить в крупном масштабе."></button>
+            <button class="catalog-filter-icon" type="button" title="отобразить отели в виде списка"><img src="images/icon-list.svg" width="16" height="14" alt="отобразить в виде списка."></button>
           </div>
           </div>
         </article>
@@ -137,7 +144,7 @@
           </div>
           <div class="hotel-buttons">
             <a class="button brown-button hotel-button-more">Подробнее</a>
-            <button class="button blue-button hotel-button-favorites">В ИЗБРАННОЕ</button>
+            <button class="button blue-button hotel-button-favorites" type="button" title="добавить в избранное.">В ИЗБРАННОЕ</button>
           </div>
           <div class="hotel-rating">
             <div class="stars">
@@ -146,7 +153,7 @@
               <img src="images/star.svg" width="18" height="17" alt="звезда.">
               <img src="images/star.svg" width="18" height="17" alt="звезда.">
             </div>
-            <button class="button hotel-rating-all">РЕЙТИНГ: 8,5</button>
+            <button class="button hotel-rating-all" type="button" title="рейтинг." >РЕЙТИНГ: 8,5</button>
           </div>
         </li>
 
@@ -160,7 +167,7 @@
           </div>
           <div class="hotel-buttons">
             <a class="button brown-button hotel-button-more">Подробнее</a>
-            <button class="button green-button hotel-button-favorites">В ИЗБРАННОМ</button>
+            <button class="button green-button hotel-button-favorites" type="button" title="добавить в избранное.">В ИЗБРАННОМ</button>
           </div>
           <div class="hotel-rating">
             <div class="stars">
@@ -169,7 +176,7 @@
               <img src="images/star.svg" width="18" height="17" alt="звезда.">
               <img src="images/star.svg" width="18" height="17" alt="звезда.">
             </div>
-            <button class="button hotel-rating-all">РЕЙТИНГ: 9,2</button>
+            <button class="button hotel-rating-all" type="button" title="рейтинг.">РЕЙТИНГ: 9,2</button>
           </div>
         </li>
 
@@ -181,7 +188,7 @@
           </div>
           <div class="hotel-buttons">
             <a class="button brown-button hotel-button-more">Подробнее</a>
-            <button class="button blue-button hotel-button-favorites">В ИЗБРАННОЕ</button>
+            <button class="button blue-button hotel-button-favorites" type="button" title="добавить в избранное.">В ИЗБРАННОЕ</button>
           </div>
           <div class="hotel-rating">
             <div class="stars">
@@ -189,7 +196,7 @@
               <img src="images/star.svg" width="18" height="17" alt="звезда.">
               <img src="images/star.svg" width="18" height="17" alt="звезда.">
             </div>
-          <button class="button hotel-rating-all">РЕЙТИНГ: 6,9</button>
+          <button class="button hotel-rating-all" type="button" title="рейтинг.">РЕЙТИНГ: 6,9</button>
           </div>
         </li>
 
@@ -201,14 +208,14 @@
           </div>
           <div class="hotel-buttons">
             <a class="button brown-button hotel-button-more">Подробнее</a>
-            <button class="button blue-button hotel-button-favorites">В ИЗБРАННОЕ</button>
+            <button class="button blue-button hotel-button-favorites" type="button" title="добавить в избранное.">В ИЗБРАННОЕ</button>
           </div>
           <div class="hotel-rating">
             <div class="stars">
               <img src="images/star.svg" width="18" height="17" alt="звезда.">
               <img src="images/star.svg" width="18" height="17" alt="звезда.">
             </div>
-            <button class="button hotel-rating-all">РЕЙТИНГ: 5,0</button>
+            <button class="button hotel-rating-all" type="button" title="рейтинг.">РЕЙТИНГ: 5,0</button>
           </div>
         </li>
       </ul>
@@ -241,7 +248,7 @@
       <section class="subscribe-white" data-test="subscribe">
         <h2 class="subscribe-h2">Подпишитесь на рассылку</h2>
         <p class="subscribe-p">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-        <form method="post" class="subscribe-form">
+        <form method="post" class="subscribe-form" action="https://echo.htmlacademy.ru">
           <input type="email" placeholder="Ваш e-mail" name="subscribe-email" class="subscribe-email">
           <input type="submit" value="ПОДПИСАТЬСЯ" class="subscribe-submit">
         </form>
@@ -269,72 +276,86 @@
 
 
 
-
-    <div class="modal">
-      <div class="modal-head">
-        <h2 class="modal-h2">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
-        <a href="#" class="close">
-          <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" fill="black"/>
-          </svg>
-        </a>
-      </div>
-      <form method="post" class="form-model">
-
-        <p class="modal-date">
-          <span class="modal-date-span">Дата Заезда:</span>
-          <span class="modal-date-div">
-            <input type="date" name="date-in" class="date">
-
-            <span class="date-in-info-red">Мы не можем отправить вас в прошлое</span>
-          </span>
-        </p>
-        <p class="modal-date">
-          <span class="modal-date-span">Дата Выезда:</span>
-          <span class="modal-date-div">
-            <input type="date" name="date-out" class="date">
-
-            <span class="date-in-info">На эти даты есть свободные номера. Пока есть.</span>
-          </span>
-        </p>
-        <div class="modal-count">
-          <div class="modal-count-left">
-            <p class="modal-p">
-            Взрослые:
-            </p>
-            <div class="modal-div">
-              <button class="modal-sub"><svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
-                </svg></button>
-            <input type="text" name="date-in" class="input-count" value="2">
-            <button class="modal-add"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
-              </svg></button>
-            </div>
-          </div>
-          <div class="modal-count-left">
-            <div class="modal-div">
-            <p class="modal-p">
-              Дети:
-            </p>
-            <button class="kid-info">i</button>
-            </div>
-            <div class="modal-div">
-
-              <button class="modal-sub"><svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
-                </svg></button>
-              <input type="text" name="date-in" class="input-count" value="2">
-              <button class="modal-add"><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
-                </svg></button>
-            </div>
-          </div>
+    <div class="modal-background">
+      <div class="modal">
+        <div class="modal-head">
+          <h2 class="modal-h2">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+          <button href="#" class="close" type="button" title="закрыть модальное окно.">
+            <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" fill="black"/>
+            </svg>
+          </button>
         </div>
-        <div class="kid-info-block">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
-        <input type="submit" value="НАЙТИ" class="modal-find">
-      </form>
-    </div>
+        <form method="post" class="form-model" action="https://echo.htmlacademy.ru">
+
+          <p class="modal-date">
+            <label for="date-in" class="modal-date-span">Дата Заезда:</label>
+            <span class="modal-date-div">
+
+                <input type="text" name="date-in" id="date-in" class="date" value="27 апреля 2020">
+
+              <button class="calendar" type="button" title="календарь для заезда."></button>
+              <span class="date-in-info-red">Мы не можем отправить вас в прошлое.</span>
+            </span>
+          </p>
+          <p class="modal-date">
+            <label for="date-out" class="modal-date-span">Дата Выезда:</label>
+            <span class="modal-date-div">
+
+              <input type="text" name="date-out" id="date-out" class="date" value="1 сентября 2023">
+              <button class="calendar" type="button" title="календарь для выезда."></button>
+              <span class="date-in-info">На эти даты есть свободные номера. Пока есть.</span>
+            </span>
+          </p>
+          <div class="modal-count">
+            <div class="modal-count-left">
+              <label for="adults" class="modal-p">
+              Взрослые:
+              </label>
+              <div class="count-human-wrapper">
+                <button class="count-human-button" type="button" title="убрать одного взрослого.">
+                  <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+                </button>
+                <input type="text" name="adults" id="adults" class="input-count" value="2" maxlength="3" size="3">
+                <button class="count-human-button" type="button" title="добавить одного взрослого.">
+                  <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="modal-count-right">
+              <label for="kids" class="modal-p">
+                Дети:
+              </label>
+              <span class="union_kid_info">
+              <button class="kid-info" type="button" title="информация о детях.">i</button>
+              <div class="kid-info-block">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+              </span>
+
+              <div class="count-human-wrapper">
+
+                <button class="count-human-button" type="button" title="убрать одного ребенка.">
+                  <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+                </button>
+                <input type="text" name="kids" id="kids" class="input-count" value="2" maxlength="3" size="3">
+                <button class="count-human-button" type="button" title="добавить одного ребенка.">
+                  <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <input type="submit" value="НАЙТИ" class="modal-find">
+        </form>
+      </div>
+      </div>
 
   </body>
 </html>
@@ -342,13 +363,12 @@
 <script>
 
   let modal = document.getElementsByClassName("modal")[0];
+  let modal_bg = document.getElementsByClassName("modal-background")[0];
   function fopen() {
-    modal.style.display = 'flex';
+    modal_bg.style.display = 'flex';
   };
-
   let close = document.getElementsByClassName("close")[0];
   close.onclick = function(){
-    modal.style.display = 'none';
+    modal_bg.style.display = 'none';
   };
-
 </script>
