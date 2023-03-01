@@ -48,7 +48,7 @@
           <a href="#" class="breadcrubs" title="перейти на гостиницы.">Гостиницы</a>
           </li>
         </ul>
-        <form method="post" class="filter-subscribe-form">
+        <form method="post" class="filter-subscribe-form" action="https://echo.htmlacademy.ru">
           <article class="filter-left">
           <div class="infrastructure">
             <h3 class="filter-h3">Инфраструктура:</h3>
@@ -123,7 +123,8 @@
         <article class="catalog-filter">
           <p class="hotel-find">Найдено гостиниц: 38</p>
           <div class="hotel-find-right">
-          <select class="catalog-filter-select">
+          <select class="catalog-filter-select" area-label="сортировка.">
+            <option>Сначала популярные</option>
             <option selected>Сначала дешевые</option>
             <option>Сначала дорогие</option>
           </select>
@@ -248,7 +249,7 @@
       <section class="subscribe-white" data-test="subscribe">
         <h2 class="subscribe-h2">Подпишитесь на рассылку</h2>
         <p class="subscribe-p">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-        <form method="post" class="subscribe-form">
+        <form method="post" class="subscribe-form" action="https://echo.htmlacademy.ru">
           <input type="email" placeholder="Ваш e-mail" name="subscribe-email" class="subscribe-email">
           <input type="submit" value="ПОДПИСАТЬСЯ" class="subscribe-submit">
         </form>
@@ -276,7 +277,7 @@
 
 
 
-    <div class="modal-fon">
+    <div class="modal-background">
       <div class="modal">
         <div class="modal-head">
           <h2 class="modal-h2">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
@@ -286,13 +287,13 @@
             </svg>
           </button>
         </div>
-        <form method="post" class="form-model">
+        <form method="post" class="form-model" action="https://echo.htmlacademy.ru">
 
           <p class="modal-date">
             <label for="date-in" class="modal-date-span">Дата Заезда:</label>
             <span class="modal-date-div">
 
-                <input type="text" name="date-in" class="date" value="27 апреля 2020" disabled>
+                <input type="text" name="date-in" id="date-in" class="date" value="27 апреля 2020">
 
               <button class="calendar" type="button" title="календарь для заезда."></button>
               <span class="date-in-info-red">Мы не можем отправить вас в прошлое.</span>
@@ -302,7 +303,7 @@
             <label for="date-out" class="modal-date-span">Дата Выезда:</label>
             <span class="modal-date-div">
 
-              <input type="text" name="date-out" class="date" value="3 сентября 2023" disabled>
+              <input type="text" name="date-out" id="date-out" class="date" value="1 сентября 2023">
               <button class="calendar" type="button" title="календарь для выезда."></button>
               <span class="date-in-info">На эти даты есть свободные номера. Пока есть.</span>
             </span>
@@ -313,39 +314,44 @@
               Взрослые:
               </label>
               <div class="modal-div">
-                <button class="modal-sub" type="button" title="убрать одного взрослого."><svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button class="modal-sub" type="button" title="убрать одного взрослого.">
+                  <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
-                  </svg></button>
-              <input type="text" name="adults" class="input-count" value="2" maxlength="3">
-              <button class="modal-add" type="button" title="добавить одного взрослого."><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
-                </svg></button>
+                  </svg>
+                </button>
+                <input type="text" name="adults" id="adults" class="input-count" value="2" maxlength="3">
+                <button class="modal-add" type="button" title="добавить одного взрослого.">
+                  <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+                </button>
               </div>
             </div>
             <div class="modal-count-right">
               <label for="kids" class="modal-p">
                 Дети:
               </label>
+              <span class="union_kid_info">
               <button class="kid-info" type="button" title="информация о детях.">i</button>
               <div class="kid-info-block">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+              </span>
 
               <div class="modal-div">
 
-                <button class="modal-sub" type="button" title="убрать одного ребенка."><svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button class="modal-sub" type="button" title="убрать одного ребенка.">
+                  <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
-                  </svg></button>
-                <input type="text" name="kids" class="input-count" value="2" maxlength="3">
-                <button class="modal-add" type="button" title="добавить одного ребенка."><svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  </svg>
+                </button>
+                <input type="text" name="kids" id="kids" class="input-count" value="2" maxlength="3">
+                <button class="modal-add" type="button" title="добавить одного ребенка.">
+                  <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
-                  </svg></button>
+                  </svg>
+                </button>
               </div>
             </div>
           </div>
-
-          <input type="submit" value="НАЙТИ" class="modal-find">
-        </form>
-      </div>
-      </div>
 
   </body>
 </html>
@@ -353,12 +359,12 @@
 <script>
 
   let modal = document.getElementsByClassName("modal")[0];
-  let modal_fon = document.getElementsByClassName("modal-fon")[0];
+  let modal_bg = document.getElementsByClassName("modal-background")[0];
   function fopen() {
-    modal_fon.style.display = 'flex';
+    modal_bg.style.display = 'flex';
   };
   let close = document.getElementsByClassName("close")[0];
   close.onclick = function(){
-    modal_fon.style.display = 'none';
+    modal_bg.style.display = 'none';
   };
-  </script>
+</script>
