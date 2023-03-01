@@ -1138,16 +1138,30 @@ body {
   outline: none;
 }
 
-.filter-label:hover + .control-mark-round {
-  background-image: url("../images/control-mark-round.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.filter-label:hover + .control-mark-round::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -5px;
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #3F5E72;
 }
 
-.filter-label input[type="radio"]:checked + .control-mark-round {
-  background-image: url("../images/control-mark-round.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.filter-label input[type="radio"]:checked + .control-mark-round::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -5px;
+  margin-top: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #3F5E72;
 }
 
 .filter-label input[type="radio"]:focus + .control-mark-round {
