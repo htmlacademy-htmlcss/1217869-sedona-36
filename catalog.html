@@ -312,14 +312,14 @@
               <label for="adults" class="modal-p">
               Взрослые:
               </label>
-              <div class="modal-div">
-                <button class="modal-sub" type="button" title="убрать одного взрослого.">
+              <div class="count-human-wrapper">
+                <button class="count-human-button" type="button" title="убрать одного взрослого.">
                   <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
                   </svg>
                 </button>
-                <input type="text" name="adults" id="adults" class="input-count" value="2" maxlength="3">
-                <button class="modal-add" type="button" title="добавить одного взрослого.">
+                <input type="text" name="adults" id="adults" class="input-count" value="2" maxlength="3" size="3">
+                <button class="count-human-button" type="button" title="добавить одного взрослого.">
                   <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
                   </svg>
@@ -335,15 +335,15 @@
               <div class="kid-info-block">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
               </span>
 
-              <div class="modal-div">
+              <div class="count-human-wrapper">
 
-                <button class="modal-sub" type="button" title="убрать одного ребенка.">
+                <button class="count-human-button" type="button" title="убрать одного ребенка.">
                   <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
                   </svg>
                 </button>
-                <input type="text" name="kids" id="kids" class="input-count" value="2" maxlength="3">
-                <button class="modal-add" type="button" title="добавить одного ребенка.">
+                <input type="text" name="kids" id="kids" class="input-count" value="2" maxlength="3" size="3">
+                <button class="count-human-button" type="button" title="добавить одного ребенка.">
                   <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
                   </svg>
@@ -351,6 +351,11 @@
               </div>
             </div>
           </div>
+
+          <input type="submit" value="НАЙТИ" class="modal-find">
+        </form>
+      </div>
+      </div>
 
   </body>
 </html>
