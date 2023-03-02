@@ -1412,6 +1412,11 @@ body {
   opacity: 0.3;
 }
 
+.form-button-reset:disabled {
+  opacity: 0.1;
+  cursor: default;
+}
+
 
 .catalog {
   display: flex;
