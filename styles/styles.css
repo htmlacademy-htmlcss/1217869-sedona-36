@@ -917,9 +917,10 @@ body {
 .count-human-button {
   background-color: transparent;
   border: none;
-  width: 40px;
-  height: 48px;
-  padding: 0 13px;
+  width: 20px;
+  height: 20px;
+  margin: 14px 10px;
+  padding: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -928,6 +929,30 @@ body {
   justify-content: center;
   cursor: pointer;
   box-sizing: border-box;
+}
+
+.count-human-button svg{
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+.count-human-button:hover svg{
+  fill: #000000;
+}
+
+.count-human-button:focus{
+  border: 3px solid #82B3D3;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+}
+
+.count-human-button:focus svg {
+  fill: #000000;
+}
+
+.count-human-button:active svg{
+  opacity: 0.2;
 }
 
 
