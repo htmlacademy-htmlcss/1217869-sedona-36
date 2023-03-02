@@ -929,6 +929,7 @@ body {
   justify-content: center;
   cursor: pointer;
   box-sizing: border-box;
+  outline: none;
 }
 
 .count-human-button svg{
