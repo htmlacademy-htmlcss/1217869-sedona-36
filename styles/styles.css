@@ -590,6 +590,17 @@ body {
   color:rgba(255, 255, 255, 0.3)
 }
 
+.subscribe-form input[type="submit"]:disabled {
+  color: #ffffff;
+  background-color: #E5E5E5;
+  cursor: default;
+}
+
+.subscribe-form input[type="email"]:disabled {
+  color: lightgray;
+  cursor: default;
+}
+
 
 .page-footer {
   display: flex;
@@ -792,7 +803,8 @@ body {
 }
 
 .date:disabled {
-  color: #000;
+  color: lightgrey;
+  background-color: #F2F2F2;
 }
 
 .calendar {
@@ -918,7 +930,18 @@ body {
   height: 48px;
   box-sizing: border-box;
 
-  width: 30PX;
+  width: 30px;
+  -moz-appearance: textfield;
+}
+
+.input-count::-webkit-outer-spin-button,
+.input-count::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.input-count:disabled {
+  color: lightgray;
+  background-color: inherit;
 }
 
 .union_kid_info {
@@ -1316,6 +1339,12 @@ body {
   width: 100%;
 }
 
+.form-button-apply:disabled {
+  background-color: #E5E5E5;
+  color: #fff;
+  cursor: default;
+}
+
 .form-button-reset {
   background: none;
   padding: 5px 50px;
@@ -1399,6 +1428,11 @@ body {
 
 .catalog-filter-select:active {
   border: 2px solid #3F5E72;
+}
+
+.catalog-filter-select:disabled {
+  background-color: #E5E5E5;
+  color: #fff;
 }
 
 .catalog-filter-icons {
