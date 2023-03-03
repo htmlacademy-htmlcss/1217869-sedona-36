@@ -566,7 +566,7 @@ body {
   width: 100%;
 }
 
-.subscribe-form input[type="email"]{
+.subscribe-email{
   font-family: inherit;
   padding: 14px 20px;
   background: #F2F2F2;
@@ -582,7 +582,7 @@ body {
   border: none;
 }
 
-.subscribe-form input[type="submit"]{
+.subscribe-submit{
   font-family: inherit;
   background: #82B3D3;
   border-radius: 0 4px 4px 0;
@@ -600,22 +600,22 @@ body {
 
   cursor: pointer;
 }
-.subscribe-form input[type="submit"]:hover, .subscribe-form input[type="submit"]:focus {
+.subscribe-submit:hover, .subscribe-submit:focus {
   background: #68A2CA;
 }
 
-.subscribe-form input[type="submit"]:active {
+.subscribe-submit:active {
   background: #68A2CA;
   color:rgba(255, 255, 255, 0.3)
 }
 
-.subscribe-form input[type="submit"]:disabled {
+.subscribe-submit:disabled {
   color: #ffffff;
   background-color: #E5E5E5;
   cursor: default;
 }
 
-.subscribe-form input[type="email"]:disabled {
+.subscribe-email:disabled {
   color: lightgray;
   cursor: default;
 }
@@ -1566,8 +1566,8 @@ body {
   gap: 6px;
 }
 
-.stars img {
-  width: 18px;
+.star {
+  fill: #83B3D3;
 }
 
 .hotel-rating {
