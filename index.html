@@ -6,6 +6,28 @@
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.png" type="image/x-icon">
+
+    <script type="text/javascript">
+      window.onload = function() {
+        let modal = document.getElementsByClassName("modal")[0];
+        let modal_bg = document.getElementsByClassName("modal-background")[0];
+
+
+        let close = document.getElementsByClassName("close")[0];
+        close.onclick = function() {
+          modal_bg.style.display = 'none';
+        };
+
+      };
+
+      function fopen() {
+          let modal_bg = document.getElementsByClassName("modal-background")[0];
+          modal_bg.style.display = 'flex';
+        };
+
+
+    </script>
+
   </head>
   <body>
     <h1 class="visually-hidden">Главная страница Седоны</h1>
@@ -54,9 +76,8 @@
             <span class="rectangle card-rectangle-white"></span>
             <p class="card-p">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <img class="card-div-img" src="images/photo-1.jpg" width="800" height="384" alt="фотография городка." class="frame-img">
+          <img class="card-div-img" src="images/photo-1.jpg" width="800" height="384" alt="фотография городка.">
         </li>
-        </article>
         <li class="card">
           <p class="card-h">Небольшая<br>площадь</p>
           <span class="rectangle card-rectangle-black"></span>
@@ -73,7 +94,7 @@
           <p class="card-p">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
         <li class="card card-wrap">
-          <img class="card-div-img" src="images/photo-2.jpg" width="800" height="385" alt="фотография каньона." class="frame-img">
+          <img class="card-div-img" src="images/photo-2.jpg" width="800" height="385" alt="фотография каньона.">
           <div class="card-div">
             <p class="card-h">Там есть<br>мост дьявола</p>
             <span class="rectangle card-rectangle-white"></span>
@@ -91,19 +112,31 @@
 
       <ul class="cards">
         <li class="cards-item">
-          <img class="cards-item-img" src="images/house.svg" width="75" height="72" alt="иконка дома.">
-          <p class="card-h">Жильё</p>
-          <p class="card-p">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+          <div class="cards-wrapper">
+
+            <p class="card-h card-h-wrapper">
+              <img class="cards-item-img" src="images/house.svg" width="75" height="72" alt="иконка дома.">
+              Жильё</p>
+            <p class="card-p">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+          </div>
         </li>
         <li class="cards-item">
-          <img class="cards-item-img" src="images/food.svg" width="74" height="70"  alt="иконка еды.">
-          <p class="card-h">Еда</p>
-          <p class="card-p">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
+          <div class="cards-wrapper">
+
+            <p class="card-h card-h-wrapper">
+              <img class="cards-item-img" src="images/food.svg" width="74" height="70"  alt="иконка еды.">
+              Еда</p>
+            <p class="card-p">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
+          </div>
         </li>
         <li class="cards-item">
-          <img class="cards-item-img" src="images/gift.svg" width="64" height="76"  alt="иконка подарка.">
-          <p class="card-h">Сувениры</p>
-          <p class="card-p">Не только китайского,<br>но и настоящего местного производства!</p>
+          <div class="cards-wrapper">
+
+            <p class="card-h card-h-wrapper">
+              <img class="cards-item-img" src="images/gift.svg" width="64" height="76"  alt="иконка подарка.">
+              Сувениры</p>
+            <p class="card-p">Не только китайского,<br>но и настоящего местного производства!</p>
+          </div>
         </li>
       </ul>
       </section>
@@ -120,7 +153,8 @@
         <h2 class="subscribe-h2">Подпишитесь на рассылку</h2>
         <p class="subscribe-p">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form method="post" class="subscribe-form" action="https://echo.htmlacademy.ru">
-          <input type="email" placeholder="Ваш e-mail" name="subscribe-email" class="subscribe-email">
+          <label for="subscribe-email" class="visually-hidden">Введите email</label>
+          <input type="email" placeholder="Ваш e-mail" name="subscribe-email" id="subscribe-email" class="subscribe-email">
           <input type="submit" value="ПОДПИСАТЬСЯ" class="subscribe-submit">
         </form>
       </section>
@@ -138,7 +172,7 @@
         <a href="https://www.youtube.com/user/htmlacademyru" title="перейти на Youtube."><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="23" height="18" fill="none" class="icon-svg"><path d="M18.94.36H3.51C1.65.36.33 1.95.33 3.76v10.09c0 1.91 1.32 3.5 3.18 3.5h15.65c1.64 0 3.17-1.59 3.17-3.4V3.76c-.22-1.8-1.53-3.4-3.39-3.4ZM7.99 12.89V4.82l7.34 4.04-7.34 4.03Z"/></svg></a>
         </li>
       </ul>
-      <a href="tel: +7 (812) 812-12-12" title="телефон +7 (812) 812-12-12." class="address">+7 (812) 812-12-12</a>
+      <a href="tel:+78128121212" title="телефон +7 (812) 812-12-12." class="address">+7 (812) 812-12-12</a>
       <a href="https://htmlacademy.ru/" title="логотип HTML академии." class="logo-html-a">
       <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="115" height="34" fill="none" class="logo-html-svg"><path d="M0 13.26v2.6h2.5v-2.6H0ZM11.6 4.86c-1.6 0-2.8.7-3.6 1.7h-.1V.36h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2v-6.1c.1-3-1.8-4.9-4.5-4.9ZM26.6 5.16h-4.8v-3.7h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1v-5.7h4.8v-2ZM41.1 4.96c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1v-1.6H29v10.6h2v-5.4c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 13.06c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V.36h-2v12.7ZM28.9 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22.36c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1v-.2ZM55.1 20.06c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2v-10.6h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 20.16c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2v-15.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 18.26c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 18.26c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27.36l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/></svg>
       </a>
@@ -149,7 +183,7 @@
       <div class="modal">
         <div class="modal-head">
           <h2 class="modal-h2">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
-          <button href="#" class="close" type="button" title="закрыть модальное окно.">
+          <button class="close" type="button" title="закрыть модальное окно.">
             <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" fill="black"/>
             </svg>
@@ -184,13 +218,13 @@
               <div class="count-human-wrapper">
                 <button class="count-human-button" type="button" title="убрать одного взрослого.">
                   <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                  <path d="M0 0L0 2L14 2V0L0 0Z"/>
                   </svg>
                 </button>
-                <input type="text" name="adults" id="adults" class="input-count" value="2" maxlength="3" size="3">
+                <input type="number" name="adults" id="adults" class="input-count" value="2">
                 <button class="count-human-button" type="button" title="добавить одного взрослого.">
                   <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
                   </svg>
                 </button>
               </div>
@@ -199,22 +233,22 @@
               <label for="kids" class="modal-p">
                 Дети:
               </label>
-              <span class="union_kid_info">
+              <div class="union_kid_info">
               <button class="kid-info" type="button" title="информация о детях.">i</button>
               <div class="kid-info-block">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
-              </span>
+              </div>
 
               <div class="count-human-wrapper">
 
                 <button class="count-human-button" type="button" title="убрать одного ребенка.">
                   <svg aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3"/>
+                  <path d="M0 0L0 2L14 2V0L0 0Z"/>
                   </svg>
                 </button>
-                <input type="text" name="kids" id="kids" class="input-count" value="2" maxlength="3" size="3">
+                <input type="number" name="kids" id="kids" class="input-count" value="2">
                 <button class="count-human-button" type="button" title="добавить одного ребенка.">
                   <svg aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                  <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
                   </svg>
                 </button>
               </div>
@@ -228,15 +262,3 @@
 
   </body>
 </html>
-<script>
-
-let modal = document.getElementsByClassName("modal")[0];
-let modal_bg = document.getElementsByClassName("modal-background")[0];
-function fopen() {
-  modal_bg.style.display = 'flex';
-};
-let close = document.getElementsByClassName("close")[0];
-close.onclick = function(){
-  modal_bg.style.display = 'none';
-};
-</script>
