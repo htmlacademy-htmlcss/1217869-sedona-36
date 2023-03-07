@@ -64,7 +64,10 @@ body {
 }
 
 .logo {
-  min-width: 140px;
+  width: 140px;
+  height: 70px;
+  background-image: url("../images/logo.svg");
+  position: absolute;
 }
 
 .img-logo {
@@ -72,7 +75,7 @@ body {
 }
 
 .navigation{
-  margin-left: 30px;
+  margin-left: 170px;
 }
 
 .navigation-list {
@@ -96,7 +99,7 @@ body {
 .navigation-link{
   text-decoration: none;
   color: #000000;
-  padding: 20px 16px 0;
+  padding: 20px 16px;
   display: flex;
   flex-direction: column;
 
@@ -106,17 +109,20 @@ body {
 
   text-transform: capitalize;
   box-sizing: border-box;
+  position: relative;
 }
 
-.navigation-link::after {
-  content: "";
-  border-bottom: 2px solid transparent;
-  padding-top:18px;
+.navigation-link:hover {
+  color: #333;
 }
 
-.navigation-link:hover::after, .navigation-link:focus::after {
+.navigation-link-select::after {
   content: "";
+  position: absolute;
+  width: calc(100% - 30px);
+  color: #333;
   border-bottom: 2px solid #756257;
+  bottom: 0;
 }
 
 .header-button{
@@ -163,16 +169,18 @@ body {
   background: #7DB54F;
   min-width: 20px;
   height: 20px;
+  display: block;
   border-radius: 10px;
   text-align: center;
   color: #FFFFFF;
   font-weight: 400;
   font-size: 10px;
-  line-height: 10px;
-  padding: 5px;
+  line-height: 15px;
+  padding: 3px;
   box-sizing: border-box;
   left: calc(50% - 2px);
   bottom: 50%;
+
 }
 
 .button{
@@ -291,7 +299,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   margin-bottom: 21px;
 }
 
@@ -300,17 +307,29 @@ body {
   height: 485px;
   text-align: center;
   padding-top: 50px;
+  background-color: #333;
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
   box-sizing: border-box;
+  position: relative;
+}
+
+.welcome-font {
+  width: 100%;
+  height: 352px;
+  background-image: url("../images/welcome.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .decor {
+  position: absolute;
   background-image: url("../images/decor-white.svg");
-  background-position: 0 22px;
   background-repeat: no-repeat;
+  background-position: bottom;
   height: 100%;
   width: 100%;
+  bottom: 0;
 }
 
 .divider {
@@ -465,46 +484,39 @@ body {
   padding: 0;
 }
 
-.cards-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  min-height: 223px;
-  padding-top: 102px;
-  box-sizing: border-box;
-  gap: 30px;
-  margin: 0;
-  position: relative;
+.card-house {
+  background-image: url("../images/house.svg");
+  background-position: 50% calc(50% - 75px);
+  background-repeat: no-repeat;
 }
 
-.card-h-wrapper {
-  position: relative;
-  width: 230px;
+.card-food {
+  background-image: url("../images/food.svg");
+  background-position: 50% calc(50% - 75px);
+  background-repeat: no-repeat;
+}
+
+.card-gift {
+  background-image: url("../images/gift.svg");
+  background-position: 50% calc(50% - 75px);
+  background-repeat: no-repeat;
 }
 
 .cards-item {
   display: flex;
   flex-direction: column;
+  gap: 30px;
   align-items: center;
   padding: 81px 85px;
+  padding-top: 183px;
   margin: 0;
   list-style-type: none;
-}
-
-.cards-item-img {
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 58px;
-  margin: 0 auto;
-  padding: 0;
-  width: auto;
+  width: 400px;
+  box-sizing: border-box;
 }
 
 .cards-item:nth-child(2n-1) {
-  background: rgba(131, 179, 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .subscribe {
@@ -1125,12 +1137,30 @@ body {
   gap: 70px;
 }
 
+.infrastructure {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.type-of-house {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .filter-search-list{
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 30px;
   list-style-type: none;
 }
 
@@ -1160,7 +1190,7 @@ body {
 .filter-h3{
   margin: 0;
   padding: 0;
-  margin-bottom: 32px;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1168,10 +1198,10 @@ body {
 
 .filter-label {
   display: flex;
-  margin-bottom: 20px;
   font-size: 18px;
   line-height: 23px;
   position: relative;
+  cursor: pointer;
 }
 
 .filter-label input {
@@ -1201,8 +1231,8 @@ body {
 }
 
 .control-label {
-  position: absolute;
-  left: 36px;
+  position: relative;
+  left: 16px;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -1281,6 +1311,9 @@ body {
 .price {
   display: flex;
   flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 .price-block {
@@ -1327,7 +1360,7 @@ body {
 
 .price-range {
   position: relative;
-  margin-top: 44px;
+  margin-top: 30px;
 }
 
 .price-line {
