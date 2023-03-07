@@ -37,20 +37,24 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html" title="перейти на главную страницу сайта.">Главная</a>
+              <a class="navigation-link navigation-link-select" href="index.html" title="перейти на главную страницу сайта.">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-select" href="catalog.html" title="перейти на страницу с выбором гостиницы.">Гостиницы</a>
+              <a class="navigation-link" href="catalog.html" title="перейти на страницу с выбором гостиницы.">Гостиницы</a>
             </li>
           </ul>
         </nav>
         </div>
         <div class="header-button">
-          <button class="search" title="поиск гостиницы."></button>
-          <button class="like" title="просмотреть понравившиеся гостиницы."></button>
+          <button class="search" title="поиск гостиницы.">
+            <span class="visually-hidden">поиск гостиницы.</span>
+          </button>
+          <button class="like" title="просмотреть понравившиеся гостиницы.">
+            <span class="visually-hidden">просмотреть понравившиеся гостиницы.</span>
+          </button>
           <button class="button brown-button" onclick="fopen()" title="найти подходящую гостиницу.">ХОЧУ СЮДА!</button>
         </div>
       </header>
@@ -125,8 +129,8 @@
             <div class="price-range">
               <div class="price-line"></div>
               <div class="price-line-select"></div>
-              <button class="price-line-left" type="button" title="нижняя цена."></button>
-              <button class="price-line-right" type="button" title="верхняя цена."></button>
+              <button class="price-line-left" type="button" title="нижняя цена."><span class="visually-hidden">нижняя цена.</span></button>
+              <button class="price-line-right" type="button" title="верхняя цена."><span class="visually-hidden">верхняя цена.</span></button>
             </div>
           </div>
 
@@ -150,7 +154,8 @@
             <option>Сначала дорогие</option>
           </select>
           <div class="catalog-filter-icons">
-            <button class="catalog-filter-icon" type="button" title="отобразить отели в виде карточек">
+            <button class="catalog-filter-icon" type="button" title="отобразить отели в виде карточек.">
+              <span class="visually-hidden">отобразить отели в виде карточек.</span>
               <svg role="img" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 0H0V6H4V0Z" fill="black"/>
                 <path d="M16 0H12V6H16V0Z" fill="black"/>
@@ -160,13 +165,15 @@
                 <path d="M10 8H6V14H10V8Z" fill="black"/>
               </svg>
             </button>
-            <button class="catalog-filter-icon" type="button" title="отобразить отели в крупном масштабе">
+            <button class="catalog-filter-icon" type="button" title="отобразить отели в крупном масштабе.">
+              <span class="visually-hidden">отобразить отели в крупном масштабе.</span>
               <svg role="img" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 12H0V14H16V12Z" fill="black"/>
                 <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
               </svg>
             </button>
-            <button class="catalog-filter-icon" type="button" title="отобразить отели в виде списка">
+            <button class="catalog-filter-icon" type="button" title="отобразить отели в виде списка.">
+              <span class="visually-hidden">отобразить отели в виде списка.</span>
               <svg role="img" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 0H0V2H2V0Z" fill="black"/>
                 <path d="M16 0H4V2H16V0Z" fill="black"/>
@@ -320,6 +327,7 @@
         <div class="modal-head">
           <h2 class="modal-h2">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
           <button class="close" type="button" title="закрыть модальное окно.">
+            <span class="visually-hidden">закрыть модальное окно.</span>
             <svg role="img" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z" fill="black"/>
             </svg>
@@ -331,9 +339,9 @@
             <label for="date-in" class="modal-date-span">Дата Заезда:</label>
             <span class="modal-date-div">
 
-                <input type="text" name="date-in" id="date-in" class="date" value="27 апреля 2020">
+                <input type="text" name="date-in" id="date-in" class="date" value="27 апреля 2020" required>
 
-              <button class="calendar" type="button" title="календарь для заезда."></button>
+              <button class="calendar" type="button" title="календарь для заезда."><span class="visually-hidden">календарь для заезда.</span></button>
               <span class="date-in-info-red">Мы не можем отправить вас в прошлое.</span>
             </span>
           </p>
@@ -341,8 +349,8 @@
             <label for="date-out" class="modal-date-span">Дата Выезда:</label>
             <span class="modal-date-div">
 
-              <input type="text" name="date-out" id="date-out" class="date" value="1 сентября 2023">
-              <button class="calendar" type="button" title="календарь для выезда."></button>
+              <input type="text" name="date-out" id="date-out" class="date" value="1 сентября 2023" required>
+              <button class="calendar" type="button" title="календарь для выезда."><span class="visually-hidden">календарь для выезда.</span></button>
               <span class="date-in-info">На эти даты есть свободные номера. Пока есть.</span>
             </span>
           </p>
@@ -353,12 +361,14 @@
               </label>
               <div class="count-human-wrapper">
                 <button class="count-human-button" type="button" title="убрать одного взрослого.">
+                  <span class="visually-hidden">убрать одного взрослого.</span>
                   <svg role="img" aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 2L14 2V0L0 0Z"/>
                   </svg>
                 </button>
                 <input type="number" name="adults" id="adults" class="input-count" value="2">
                 <button class="count-human-button" type="button" title="добавить одного взрослого.">
+                  <span class="visually-hidden">добавить одного взрослого.</span>
                   <svg role="img" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
                   </svg>
@@ -370,19 +380,21 @@
                 Дети:
               </label>
               <div class="union_kid_info">
-              <button class="kid-info" type="button" title="информация о детях.">i</button>
+              <button class="kid-info" type="button" title="информация о детях."><span class="visually-hidden">информация о детях.</span>i</button>
               <div class="kid-info-block">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
               </div>
 
               <div class="count-human-wrapper">
 
                 <button class="count-human-button" type="button" title="убрать одного ребенка.">
+                  <span class="visually-hidden">убрать одного ребенка.</span>
                   <svg role="img" aria-hidden="true" focusable="false" width="14" height="2" viewBox="0 0 14 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0L0 2L14 2V0L0 0Z"/>
                   </svg>
                 </button>
                 <input type="number" name="kids" id="kids" class="input-count" value="2">
                 <button class="count-human-button" type="button" title="добавить одного ребенка.">
+                  <span class="visually-hidden">добавить одного ребенка.</span>
                   <svg role="img" aria-hidden="true" focusable="false" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z"/>
                   </svg>
