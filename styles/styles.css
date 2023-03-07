@@ -68,6 +68,7 @@ body {
   height: 70px;
   background-image: url("../images/logo.svg");
   position: absolute;
+  z-index: 1;
 }
 
 .img-logo {
