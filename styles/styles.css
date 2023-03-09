@@ -113,8 +113,12 @@ body {
   position: relative;
 }
 
-.navigation-link:hover {
-  color: #333;
+.navigation-link:hover, .navigation-link:focus {
+  color: #756157;
+}
+
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-link-select::after {
@@ -138,30 +142,43 @@ body {
   width: 44px;
   min-height: 64px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   padding: 0;
   margin: 0;
-
   background-color: #FFFFFF;
-  background-image: url("../images/icon-search.svg");
-  background-size: 18px 18px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+  cursor: pointer;
+}
+
+.search:hover, .search:focus {
+  color: #756157;
+}
+
+.search:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .like {
   background-color: #FFFFFF;
-  background-image: url("../images/icon-like.svg");
-  background-size: 18px 17px;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
   width: 44px;
   min-height: 64px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   padding: 0;
   margin-right: 20px;
   position: relative;
+  cursor: pointer;
+}
+
+.like:hover, .like:focus {
+  color: #756157;
+}
+
+.like:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .like::after {
@@ -688,21 +705,18 @@ body {
 }
 
 .logo-html-svg {
-  fill: #000000;
+  color: #000000;
   cursor: pointer;
 }
 
-.logo-html-svg:hover path, .logo-html-svg:hover path {
-  fill: #756157;
+.logo-html-svg:hover, .logo-html-svg:focus{
+  color: #756157;
 }
 
-.logo-html-svg:active path {
-  fill: rgba(117, 97, 87, 0.3);
+.logo-html-svg:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
-.img-social {
-  display: block;
-}
 
 .modal-background {
   display: none;
